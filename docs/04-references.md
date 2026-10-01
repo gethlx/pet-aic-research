@@ -1,30 +1,30 @@
 # 04 · 参考资料清单
 
 > 检索时间：2026-09-30 ~ 2026-10-01。
-> 标注规范：✅ 已核实（同行评审/会议发表/多源交叉）· ⚠️ 自报（厂商或团队单方口径）· ❓ 未确认。
+> 当前标注按[VETTING](../VETTING.md)限定到陈述；发表状态与独立验证分开。A–E为建仓资料索引，未复核项只作线索；本轮明确核实范围见F。
 
-## A. 同行评审文献与会议论文 ✅
+## A. 论文与学术发布线索（发表状态逐条核查）
 
 1. **Bastos, A.P.M., Houghton, Z.N., Naranjo, L., Rossano, F.** *Soundboard-trained dogs produce non-accidental, non-random and non-imitative two-button combinations.* **Scientific Reports**, 2024-12-09. DOI: 10.1038/s41598-024-79517-6
    — 152 只犬、21 个月、26 万+ 次按钮按压；双词组合非随机、非模仿。
 2. **UC San Diego / Rossano 团队** 按钮词义理解研究，**PLOS ONE**, 2024。
    — 预注册设计；30 只入户 + 29 只远程实验；狗响应词本身而非主人肢体线索。
 3. **Abzaliev, A., et al. (Univ. of Michigan & INAOE)** *Towards Dog Bark Decoding: Leveraging Human Speech Processing for Automated Bark Classification.* **arXiv:2404.18739**（2024-04），LREC-COLING 2024 报告。
-   — Wav2Vec2 迁移至犬吠：个体识别 ~50%（从零训练 24%）、品种 62%、情境/情绪 ~70%。
+   — 个体49.95%、品种62.28%、四类情境62.18%（基线56.37%）；详见F的原论文复核。
 4. **Mars Petcare / Pet Insight Project** *Deep Learning Classification of Canine Behavior Using a Single Collar-Mounted Accelerometer: Real-World Validation.* **Animals**, 2021. DOI: 10.3390/ani11061549
    — 抓挠 0.870/0.997、舔舐 0.772/0.990、进食 0.988/0.983（灵敏度/特异性）。
 5. **Pet Insight Project** *Retrospective observational study shows accelerometers can monitor effects of canine pruritus treatment.* **AJVR**（AVMA Journals）, 2025, 86(3). DOI: ajvr.24.09.0269
-   — 10 万只佩戴 Whistle FIT 的临床犬数据；加速度计可监测皮炎疗效。
+   — 病历联动与治疗响应候选；实际分析样本待读全文，不把项目全部犬数当临床研究样本。
 6. **Andics, A., et al.** *Neural mechanisms for lexical processing in dogs.* **Science**, 2016.
-   — 犬脑左半球处理词义、右半球处理语调，匹配时奖励中枢激活。
+   — 犬词／语调处理研究；脑区表述、题名与后续修正待核，不作工程干预证据。
 7. **Müller, C.A., et al.** 犬通过触屏辨别人类喜怒表情, 2015（Learning & Behavior）。
 8. **Pongrácz, P., et al.（Family Dog Project, ELTE）** 犬跟随 2D 屏幕指向指令, 2003。
 9. **Ruge, L., Mancini, C.** 辅助犬家庭环境犬用控制器的系统性可用性评估, 2019（ACI 相关）。
-   — 任务耗时 -50%、成功率 +20%。
+   — 原记录任务耗时-50%、成功率+20%；原文、样本和任务待核，不作性能锚点。
 10. **Earth Species Project** *Introducing NatureLM-audio: An Audio-Language Foundation Model for Bioacoustics.* 2024-11-11；demo v1.1 更新于 2026-04-09。
-    — BEATs + Llama 3.1-8B；BEANS-Zero zero-shot SOTA。
+    — 架构与基准为团队研究口径；正式发表状态、具体版本和比较设置需分别核对。
 
-## B. 学术机构与学科门户 ✅
+## B. 学术机构与门户（定位入口，非效果验证）
 
 11. **Clara Mancini（The Open University）** ACI 实验室主页与 ACI Manifesto（2011）；ACI 国际会议（2016 年起，ACM 出版）。
     https://www.open.ac.uk/people/cm476
@@ -66,3 +66,22 @@
 | 数字生命档案 | 以唯一宠物 ID 归集多设备多模态数据（静态档案 + 动态生理/行为流）的个体数据模型 |
 | 个体生理基线 | 为单只宠物建立的正常范围模型，异常检测以此为参照，而非通用阈值 |
 | BEANS / BEANS-Zero | 生物声学 AI 基准（ESP 维护），后者专测 zero-shot 跨物种泛化 |
+
+## F. 2026-10-01 原始来源复核与纠正
+
+下列原文于2026-10-01核对，只覆盖指定陈述。A–E的旧资料保留作线索，未附原文或方法的数字须待核；旧标题的✅不构成独立验证。
+
+| 对象 | 原始入口 | 核实范围与限制 |
+|---|---|---|
+| 犬吠分类 | [LREC-COLING原论文](https://aclanthology.org/2024.lrec-main.1432.pdf) | 表4四类情境62.18%，多数类基线56.37%；表5性别分类68.90%／70.07%。按犬分组十折评估；三类主要犬种，不能当家庭意图翻译精度。末尾说明数据和基线可向作者申请，不是直接公开下载或商用许可。 |
+| NatureLM代码 | [LICENSE](https://github.com/earthspecies/NatureLM-audio/blob/main/LICENSE) | 当前代码MIT，不覆盖权重和数据。 |
+| NatureLM权重／能力 | [官方模型卡](https://huggingface.co/EarthSpeciesProject/NatureLM-audio) · [v1.1指南](https://projects.earthspecies.org/naturelm-audio/latest/quick_start.html) · [数据说明](https://projects.earthspecies.org/naturelm-audio/datasets.html) | 所列权重CC-BY-NC-SA-4.0；鸟类表现最强，其他类群较不可靠；数据逐记录许可。v1.1 demo不代表特定权重许可或犬猫验证。 |
+| Whistle | [2025-07-28官方公告](https://www.whistle.com/blogs/news/whistle-joins-the-tractive-family) · [Tractive收购公告](https://tractive.com/blog/en/press/tractive-acquires-whistle) | 收购及原服务停用安排；不证明迁移体验或继承原算法效果。 |
+| AIC按钮理解 | [PLOS ONE原论文](https://doi.org/10.1371/journal.pone.0307189) | 训练犬对部分词与结果的关联；披露FluentPet咨询／雇佣关系，不能称完全独立。 |
+| AIC双按钮组合 | [Scientific Reports原论文](https://www.nature.com/articles/s41598-024-79517-6) | 152犬非随机组合统计证据；不是每次按压的完整语义或无偏标签。 |
+| PetPace | [厂商机制说明](https://petpace.com/use-cases/anxiety-stress/) | 厂商说明脉搏／HRV使用声学传感；效果仍为厂商口径，具体型号继续核对。 |
+| 美国动物器械 | [FDA手册6.3.7.2](https://www.fda.gov/media/166525/download) | 一般不要求510(k)、PMA或上市前审批；仍受掺假／错误标签等监管，不等于无合规要求。 |
+| 欧盟MDR | [2017/745第2条](https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng) | medical device定义为人用，不应自动套用宠物器械；兽用按国家、用途查要求。 |
+| 欧盟CE | [官方指引](https://europa.eu/youreurope/business/product-rules-compliance/general-product-compliance/ce-marking/index_en.htm) | 无中央机构给所有产品发CE使用许可；查厂商符合性声明与适用规则，不虚构通用CE认证记录库。 |
+
+待补证据：猫叫96%的原论文与测试划分；萌小译销量、精度与用户抽样；SoundTalks ROI样本和设计；Moonback产品实际上市与规格；部分历史文献正式题名、venue和数据来源。

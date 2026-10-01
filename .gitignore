@@ -10,3 +10,6 @@ Thumbs.db
 # Working files
 *.tmp
 ~$*
+
+# Weekly tasks: transient shared write lock
+.weekly-write.lock/

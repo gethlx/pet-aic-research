@@ -1,37 +1,36 @@
-# tooling · 开源模型与工程工具包
+# tooling · 模型与工程资源
 
-> 优先收录开源 + 活跃维护。硬字段：repo 活跃度、license、商用可行性。每周增量。
+> 2026-10-01纠正。代码、权重、数据及依赖分别核查；当前表中“待核”不能用于商用判断。最新commit日期不是可用性证明。
 
 ## 模型
 
-| 模型/仓库 | 用途 | 基座与形态 | License | 活跃度 |
+| 资源 | 任务／形态 | 代码许可 | 权重／数据与商用 | 当前证据与可用性 |
 |---|---|---|---|---|
-| NatureLM-audio（earthspecies） | 动物音频理解/问答 | BEATs 编码器 + Llama 3.1-8B Instruct，LoRA 微调 | 开源（见 repo；Llama 3.1 社区许可之上需注意组合条款） | demo v1.1，2026-04 更新 ✅ |
-| AVES / BirdAVES（earthspecies） | 自监督动物声音表征 | 音频编码器，跨物种分类；BirdAVES 鸟类 +20% | 开源 | 稳定 |
-| wav2vec2（Meta/fairseq 或 HF） | 语音预训练迁移基座 | 自监督语音模型——U-M 犬吠研究即基于此 | MIT（fairseq）/ HF 实现 | 维护中 |
-| BEATs（Microsoft） | 音频预训练 | NatureLM 的音频编码器来源 | 需查 ❓ | 维护中 |
-| FilterNet（Mars Pet Insight） | IMU 行为分类参考 | 论文公开方法，无官方开源 repo——需自研复现 | 论文方法可借鉴 | — |
+| NatureLM-audio | BEATs＋Llama3.1-8B相关生物声学模型 | ✅[当前MIT LICENSE](https://github.com/earthspecies/NatureLM-audio/blob/main/LICENSE) | ✅[所列权重CC-BY-NC-SA-4.0](https://huggingface.co/EarthSpeciesProject/NatureLM-audio)，不据此允许直接商用；[数据逐记录许可](https://projects.earthspecies.org/naturelm-audio/datasets.html)；基座／依赖另查 | 核查2026-10-01；[v1.1指南](https://projects.earthspecies.org/naturelm-audio/latest/quick_start.html)鸟类最强，其他类群较不可靠。版本／commit与对应权重待固定，未本地复现，犬猫适用性待测 |
+| AVES／BirdAVES | 动物声音表征 | [ESP仓库入口](https://github.com/earthspecies)，具体repo／版本许可待核 | 权重和数据待核；撤回“开源即可商用”推定 | 维护日期及原“鸟类+20%”对应任务待核 |
+| wav2vec2 | 人类语音预训练迁移 | [fairseq](https://github.com/facebookresearch/fairseq)／[HF模型入口](https://huggingface.co/models?search=wav2vec2)，具体实现许可待核 | 实现许可不覆盖所有checkpoint；具体权重／数据待核 | 犬吠论文方法可借鉴，资源版本和复现待核 |
+| BEATs | 音频编码器 | [Microsoft入口](https://github.com/microsoft/unilm/tree/master/beats)，许可待核 | checkpoint及依赖待核 | 不以代码或论文存在推定商业许可 |
+| FilterNet | IMU行为分类方法 | [论文](https://doi.org/10.3390/ani11061549)，无已确认官方开源repo | 无可直接取得部署资源证明 | 方法可借鉴，需自研复现；生产规模不是本项目验收 |
 
-## 工具链
+## 工具线索
 
-| 工具 | 用途 | 出处 | License |
-|---|---|---|---|
-| Voxaboxen | 动物叫声标注平台（协作标注） | ESP | 开源 |
-| Biodenoising | 生物声学去噪（无需干净训练数据） | ESP | 开源 |
-| BEANS/BEBE 评测脚本 | 标准基准评测 | ESP | 开源 |
-| Hugging Face Audio 工具栈 | 数据管道与训练 | HF | Apache-2.0 系 |
+| 工具 | 用途 | 原始入口／许可与版本状态 |
+|---|---|---|
+| Voxaboxen | 动物声音标注 | [ESP组织](https://github.com/earthspecies)，具体repo、license、维护日期待核 |
+| Biodenoising | 生物声学去噪 | [ESP组织](https://github.com/earthspecies)，具体repo、license、维护日期待核 |
+| BEANS／BEBE评测脚本 | 基准评估 | [ESP组织](https://github.com/earthspecies)，脚本与子数据许可分开核对 |
+| Hugging Face Audio栈 | 数据与训练 | [HF文档](https://huggingface.co/docs)，具体包／版本许可待核，不笼统写Apache-2.0系 |
 
-## 传感器选型笔记（工程向）
+## 传感器选型问题
 
-| 传感 | 适用层 | 成熟度 | 宠物场景要点 |
-|---|---|---|---|
-| 三轴加速度计 | ①行为分类 | **最高**（Whistle 已验证量产） | 采样率与功耗平衡；项圈佩戴位置对精度影响小（已验证） |
-| PPG 心率/HRV | ①生理 | 中（医疗级项圈已用，毛发/运动伪影是难点） | 短毛部位贴合；夜间静息场景最稳 |
-| 毫米波雷达 60GHz | ①呼吸/心率（非接触） | 中（Moonback 窝垫、康波等在用） | 窝垫场景最稳（静息+固定位置）；穿窝垫织物无碍 |
-| MEMS 麦克风阵列 | ①③声学 | 高（萌小译、SoundTalks 已量产两极验证） | 项圈形态需处理摩擦/风噪；多宠家庭声源分离是难点 |
-| 摄像头 + 视觉 | ①行为/排泄 | 高（PETKIT Purobot 已量产） | 隐私合规是产品红线；夜视红外 |
-| GPS/电子围栏 | ①户外 | 成熟 | 续航是主要约束 |
+| 方案 | 可研究任务 | 必须核验的宠物适配条件 |
+|---|---|---|
+| IMU | 行为分类 | 位置、项圈松紧、犬种、采样／功耗、人与宠物接触混淆；不能泛称佩戴位置无影响 |
+| 声学生理检测 | 脉搏／HRV | PetPace官方机制说明，具体型号和独立性能待核 |
+| PPG | 生理候选 | 毛发、贴合、肤色及运动伪影；不能用PetPace当PPG实证 |
+| 60GHz雷达 | 静息呼吸／心率候选 | 姿态、遮挡、距离、多宠和织物条件，不能泛称穿织物无碍 |
+| 麦克风 | 声学分类 | 风／摩擦／电视人声、多宠声源归属及未见家庭测试 |
+| 摄像头 | 行为／如厕 | 夜视、遮挡、多宠识别、人像隐私和数据可导出性 |
+| GPS／通信 | 户外定位 | 具体模块、功耗、覆盖与无线规则，不与健康识别性能混用 |
 
-## 每周增量说明
-
-新模型/工具追加表尾，登记 repo 最近 commit 日期；供应链行情变化移步 [supply-chain.md](./supply-chain.md)。
+首次复现前固定硬件／软件版本、任务样本、基线与许可。参数或厂商宣传不替代宠物场景实测。

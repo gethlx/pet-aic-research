@@ -1,39 +1,39 @@
-# papers · 论文追踪
+# papers · 论文与研究线索
 
-> 按四层路线分组，2023–2026 为主。每条：标题 / venue / 年份 / 一句话结论 / 可用性评级（直接可用 · 方法可借鉴 · 仅背景）。preprint 一律标 ⚠️ 待评审。
+> 2026-10-01纠正；路线标签保留，发表状态、原文结果和产品可用性分别记录。未知不补造。核验方法见[VETTING](../VETTING.md)。
 
-## ① 感知层
+## ① 感知
 
-| 论文 | Venue / 年份 | 一句话结论 | 可用性 |
+| 研究 | 发表／来源 | 结果及证据边界 | 可用性 |
 |---|---|---|---|
-| Towards Dog Bark Decoding: Leveraging Human Speech Processing for Automated Bark Classification（Abzaliev et al., U-M & INAOE） | arXiv:2404.18739 / LREC-COLING 2024 | 人类语音预训练模型（Wav2Vec2）迁移到犬吠：个体 50%、品种 62%、情境 ~70%，全面优于从零训练 | 方法可借鉴 |
-| Deep Learning Classification of Canine Behavior Using a Single Collar-Mounted Accelerometer（Mars Pet Insight） | Animals 2021, 10.3390/ani11061549 | 单加速度计亚秒级行为分类：抓挠 87/99.7、进食 98.8/98.3（灵敏度/特异性），1100 万天生产数据验证 | 直接可用 |
-| Retrospective observational study: accelerometers monitor canine pruritus treatment（AJVR 2025, 86(3)） | AJVR 2025 | 加速度计数据与兽医 EHR 联动可监测皮炎疗效——感知层临床价值实证 | 直接可用 |
-| 米兰大学猫叫情境分类（喂食/梳毛/独处，21 只猫） | ~2019（SciAm 报道） | 猫叫情境可分类，最高 96%——MeowTalk 科学源头 | 方法可借鉴 |
-| Duzce University vision transformer 猫叫分类 | 2024–25（SciAm 报道） | 频谱图进 ViT，定位对分类贡献可解释 | 方法可借鉴 |
-| Feline/Canine Grimace Scale 及 ML 自动化系列 | 2019–2024 | 疼痛表情量表已验证，自动化识别 95%+（CatsMe! 口径 ⚠️） | 方法可借鉴 |
+| Towards Dog Bark Decoding（Abzaliev等） | ✅[LREC-COLING 2024原文](https://aclanthology.org/2024.lrec-main.1432.pdf)，核查2026-10-01 | 74犬、主要三犬种；个体49.95%、品种62.28%；四类情境62.18%（基线56.37%）；按犬分组十折；不是约70%的情绪识别 | 方法可借鉴，数据申请／许可待核 |
+| Deep Learning Classification of Canine Behavior（Pet Insight） | [Animals 2021](https://doi.org/10.3390/ani11061549)，核查2026-10-01 | 原记录抓挠87／99.7、进食98.8／98.3（灵敏度／特异性）；生产数据规模不等于全部有独立真值验证。对应任务、验证集和利益关系须在使用前细读 | 方法可借鉴，无官方开源实现，不是直接可部署 |
+| Accelerometers monitor canine pruritus treatment | [AJVR 2025建仓线索](../docs/04-references.md)，原记录DOI后缀ajvr.24.09.0269；解析入口及全文待核 | 病历联动／皮炎治疗响应线索；实际分析样本、对照和局限待核，不能把项目全部犬数当研究样本 | 临床方法候选 |
+| 米兰大学猫叫三情境分类 | ❓原论文待追溯；[建仓媒体线索](../docs/04-references.md)，核查2026-10-01 | 原记录21猫／最高96%，任务划分、个体隔离及泛化待核 | 待核，不作性能锚点 |
+| Duzce ViT猫叫分类 | ❓题名、venue和原文待核；[建仓线索](../docs/04-references.md) | 原媒体称2024–25；不以报道推定发表或可解释性效果 | 待核 |
+| Feline／Canine Grimace及ML系列 | ❓逐篇题名、物种与原文待拆分；[建仓线索](../docs/04-references.md) | 量表研究与App识别分开；CatsMe!95%+为来源口径⚠️ | 方法线索 |
 
-## ② 表达层（AIC 与认知）
+## ② 表达
 
-| 论文 | Venue / 年份 | 一句话结论 | 可用性 |
+| 研究 | 发表／来源 | 结果及证据边界 | 可用性 |
 |---|---|---|---|
-| Soundboard-trained dogs produce non-accidental, non-random and non-imitative two-button combinations（Bastos, Rossano et al.） | Scientific Reports 2024, 10.1038/s41598-024-79517-6 | 152 犬 26 万次按压：双词组合非随机非模仿——AIC 意向性最硬证据 | 直接可用 |
-| Dogs understand words from soundboard buttons（Rossano 团队） | PLOS ONE 2024 | 预注册实验：狗响应按钮词义本身，非主人线索 | 直接可用 |
+| Soundboard-trained dogs produce non-accidental…two-button combinations | ✅[Scientific Reports 2024-12-09](https://www.nature.com/articles/s41598-024-79517-6)，核查2026-10-01 | 152犬、26万+按压，组合非随机／非简单模仿；主人记录和选择偏差、词义对应及个体差异仍需检验 | 方法可借鉴，不是直接可用意图标签 |
+| How do soundboard-trained dogs respond to human button presses? | ✅[PLOS ONE 2024-08-28](https://doi.org/10.1371/journal.pone.0307189)，核查2026-10-01 | 30入户＋29远程，部分词／结果关联；作者披露FluentPet咨询／雇佣关系，非完全利益无关 | 方法可借鉴 |
 
-## ③ 推理层（融合与评估方法学）
+## ③ 推理
 
-| 论文 | Venue / 年份 | 一句话结论 | 可用性 |
+| 研究 | 发表／来源 | 结果及证据边界 | 可用性 |
 |---|---|---|---|
-| Introducing NatureLM-audio（ESP） | 2024-11 发布，v1.1 2026-04 | 首个动物音频-语言基础模型（BEATs+Llama3.1-8B），BEANS-Zero zero-shot SOTA；可自然语言问答、泛化到未见物种 | 直接可用（开源） |
-| 动物通信评估方法学讨论（Rossano, UCSD Today 2025 访谈中表述） | 2025 | AI 找模式，意义需 ground truth；主人反馈是唯一可规模化标注源——评估设计的北极星 | 仅背景 |
+| NatureLM-audio | ⚠️[arXiv 2411.07186](https://arxiv.org/abs/2411.07186)，2024-11；[官方指南](https://projects.earthspecies.org/naturelm-audio/latest/quick_start.html)，核查2026-10-01 | 生物声学基准／跨物种任务；鸟类表现最强，犬猫家庭意图待测；权重许可见tooling，预印本后续正式发表状态待核 | 研究候选；不认定直接商用 |
+| Rossano／UCSD Today评估讨论 | ⚠️2025访谈线索，[建仓参考](../docs/04-references.md) | 访谈不是论文；“主人反馈唯一可规模化真值”是原仓库推断，已撤回 | 仅背景，访谈原文待核 |
 
-## ④ 反向层
+## ④ 反向
 
-| 论文 | Venue / 年份 | 一句话结论 | 可用性 |
+| 研究 | 发表／来源 | 结果及证据边界 | 可用性 |
 |---|---|---|---|
-| Neural mechanisms for lexical processing in dogs（Andics et al.） | Science 2016 | 犬脑分离处理词义（左）与语调（右），匹配激活奖励中枢——人→宠信号可工程化的神经地基 | 方法可借鉴 |
-| 犬跟随 2D 屏幕指向/预录视频（Pongrácz 2003；Péter 后续） | 2003+（Family Dog Project） | 远程人→宠视觉通道存在基础 | 仅背景 |
+| Neural mechanisms for lexical processing in dogs（Andics等） | Science 2016，原文待补；[建仓线索](../docs/04-references.md) | 犬听觉词／语调背景；具体脑区表述及后续修正待核，不能推定工程干预有效 | 方法背景 |
+| 犬跟随屏幕／录像指令（Pongrácz、Péter等） | 2003+，逐篇原文待拆分；[建仓线索](../docs/04-references.md) | 远程信号研究线索，不当通用产品证明 | 背景／方法待核 |
 
-## 每周增量说明
+## 新条目的必要笔记
 
-新论文追加到对应分组表尾，字段齐全并带 ✅/⚠️；每周扫描结果同步登记 [updates-log.md](./updates-log.md)。
+至少写来源、发表与核查日期、任务／物种／动物数量、标签和指标、基线、按个体划分、外部验证、利益关系、使用边界。缺失写未知。健康预警补每宠每日误报、漏报、提前量和后续行动。允许追溯关键旧文献和负面结果；代码／数据／权重许可到对应资源表分别核查。
