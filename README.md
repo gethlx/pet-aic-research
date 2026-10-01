@@ -49,6 +49,15 @@
 | [docs/03-roadmap.md](./docs/03-roadmap.md) | 四层技术路线详解、证据锚点与三个现实约束 |
 | [docs/04-references.md](./docs/04-references.md) | 学术论文与产品资料清单（附链接、日期、核实状态） |
 
+## 持续追踪（每周更新）
+
+| 目录 | 内容 | 更新机制 |
+|---|---|---|
+| [market/](./market/README.md) | 市场同类产品对比调研与分析：竞品矩阵、单品拆解、宣传-实测落差榜 | 每周增量，章程见 market/README.md |
+| [research/](./research/README.md) | 学术界与工程技术界最新进展与资源包：论文追踪、数据集指引、开源工具、供应链 | 每周增量，章程见 research/README.md |
+
+两个目录共用四层路线作为分类骨架：market 记录「商业验证状态」，research 记录「科学证明程度」，同一层对齐即可读出差距与机会。更新均遵循证据标注规范（✅⚠️❓），每周日志见各自 `updates-log.md`。
+
 ## 证据标注规范
 
 本仓库所有事实性陈述遵循统一标注：
