@@ -13,7 +13,7 @@
 | Duzce ViT猫叫分类 | ❓题名、venue和原文待核；[建仓线索](../docs/04-references.md) | 原媒体称2024–25；不以报道推定发表或可解释性效果 | 待核 |
 | Feline／Canine Grimace及ML系列 | ❓逐篇题名、物种与原文待拆分；[建仓线索](../docs/04-references.md) | 量表研究与App识别分开；CatsMe!95%+为来源口径⚠️ | 方法线索 |
 | 犬语音素字母表发现（Wang等，UT Arlington ACL2组） | ✅[ACL 2025原文页](https://aclanthology.org/2025.acl-long.451/)，Outstanding Paper，核查2026-10-05 | 最小对启发的迭代算法发现犬音位类单元与重复声学单元；摘要页未给数据规模、个体划分与跨犬泛化，待读全文；同组另有Dog2vec（Interspeech 2025）与词法发现论文线索待核 | 方法可借鉴；代码/数据链接见[实验室页](https://uta-acl2.github.io/research.html)，许可待核 |
-| CREMD犬情绪标注研究 | ⚠️[arXiv 2602.15349](https://arxiv.org/abs/2602.15349)，2026-02-17预印本待评审，核查2026-10-05 | 923视频片段×三呈现模式众包标注研究：视觉上下文显著提高标注一致性；音频线索因设计限制结论不确定；音频显著提高标注者对愤怒/恐惧的信心。是标注方法与偏差研究，非识别模型结果；数据公开与许可待核 | 标注偏差方法参照（主人/外行标注差异证据） |
+| CREMD犬情绪标注研究 | ⚠️[arXiv 2602.15349](https://arxiv.org/abs/2602.15349)，2026-02-17预印本待评审，核查2026-10-05 | 440视频清理为402，制作三呈现条件**合计923呈现条目**（无上下文无音频402＋带上下文无音频402＋带上下文有音频119，缺"无上下文有音频"条件），23标注者：视觉上下文显著提高标注一致性；音频提高标注者对愤怒/恐惧的信心但结论不确定。一致性/信心≠真实情绪准确性。是标注方法与偏差研究，非识别模型结果；数据公开与许可待核 | 标注偏差方法参照（主人/外行标注差异证据） |
 
 ## ② 表达
 
@@ -21,16 +21,16 @@
 |---|---|---|---|
 | Soundboard-trained dogs produce non-accidental…two-button combinations | ✅[Scientific Reports 2024-12-09](https://www.nature.com/articles/s41598-024-79517-6)，核查2026-10-01 | 152犬、26万+按压，组合非随机／非简单模仿；主人记录和选择偏差、词义对应及个体差异仍需检验 | 方法可借鉴，不是直接可用意图标签 |
 | How do soundboard-trained dogs respond to human button presses? | ✅[PLOS ONE 2024-08-28](https://doi.org/10.1371/journal.pone.0307189)，核查2026-10-01 | 30入户＋29远程，部分词／结果关联；作者披露FluentPet咨询／雇佣关系，非完全利益无关 | 方法可借鉴 |
-| 四按钮计算机化游戏系统评估 | ⚠️[Learning & Behavior 2025-11-04](https://doi.org/10.3758/s13420-025-00692-1)，未读全文，核查2026-10-05 | 按钮论文后续：犬认知参与的四按钮系统；任务、样本与结果待读原文 | 按钮/ACI线索 |
-| 播放词音质影响犬识别与响应 | ⚠️[Scientific Reports 2025-04-28](https://doi.org/10.1038/s41598-025-96824-8)，未读全文，核查2026-10-05 | 声板播放音质影响犬对词的识别与响应；细节待读原文 | 声板硬件设计线索 |
-| "Talking dogs"科学综述 | ⚠️[Biologia Futura 2025-06-01](https://doi.org/10.1007/s42977-025-00276-0)，未读全文，核查2026-10-05 | 声板研究现状综述；结论待读原文 | 背景综述线索 |
+| 四按钮计算机化游戏系统评估 | ⚠️[Learning & Behavior 2025-11-04](https://doi.org/10.3758/s13420-025-00692-1)，[PubMed摘要](https://pubmed.ncbi.nlm.nih.gov/41186871/)级核对，全文未读，核查2026-10-05 | 概念验证（PoC）：1只犬、11个月、66次训练、约21小时，研究游戏操作与认知丰富化；披露一位作者经营相关产品公司。**不是**自主诉求或词义表达的一般AIC证据 | 按钮/ACI线索（单犬PoC，勿外推） |
+| 播放词音质影响犬识别与响应 | ✅[Scientific Reports 2025-04-28](https://doi.org/10.1038/s41598-025-96824-8)，摘要级核对（17只普通犬＋7只Gifted Word Learner犬；真人/特定按钮/扬声器对比），全文未读，核查2026-10-05 | 特定设备测试：FluentPet Classic Speak Up按钮条件表现最差，作者讨论频谱退化；负面结果保留。不能外推全部按钮品牌，不能否定长期训练后的交流 | 声板硬件设计线索（回放音质是参数级约束） |
+| "Talking dogs"科学综述 | ✅[Biologia Futura](https://doi.org/10.1007/s42977-025-00276-0)，Version of record 2025-07-29（2025-06为期次），出版方页面核对，全文未读，核查2026-10-05 | 覆盖犬发声的解剖、认知、演化与技术（含声板），非仅声板综述；含反对拟人化解读与动物福利论证 | 背景综述线索 |
 
 ## ③ 推理
 
 | 研究 | 发表／来源 | 结果及证据边界 | 可用性 |
 |---|---|---|---|
 | NatureLM-audio | ✅[ICLR 2025正式发表](https://openreview.net/forum?id=hJVdwBpWjt)；[arXiv 2411.07186](https://arxiv.org/abs/2411.07186)；[官方指南](https://projects.earthspecies.org/naturelm-audio/latest/quick_start.html)，核查2026-10-05 | 生物声学基准／跨物种任务；鸟类表现最强，犬猫家庭意图待测；权重许可见tooling，2026-10-05确认ICLR 2025发表 | 研究候选；不认定直接商用 |
-| NatureLM模型合并零样本泛化（Marincione等） | ⚠️[arXiv 2511.05171 v2](https://arxiv.org/abs/2511.05171)，2025-11-19待评审；[官方repo已引用](https://github.com/earthspecies/NatureLM-audio)，核查2026-10-05 | NatureLM与基座Llama插值合并恢复指令遵循，自称未见物种闭集零样本分类相对提升200%+；仅闭集零样本，非犬猫家庭任务；merging_alpha 0.4–0.6任务相关 | 部署候选路径；独立复现待核 |
+| NatureLM模型合并零样本泛化（Marincione等） | ⚠️[arXiv 2511.05171 v2](https://arxiv.org/abs/2511.05171)，2025-11-19待评审；[官方repo已引用](https://github.com/earthspecies/NatureLM-audio)，核查2026-10-05 | NatureLM与基座Llama插值合并恢复指令遵循：未见物种闭集任务（**40标签/425样本，F1 0.09→0.28**）——"200%+"为相对增益，绝对水平仍低；merging_alpha 0.4–0.6任务相关；提示词变化可致答案失稳 | 部署候选路径；独立复现待核；不扩大为犬猫意图可用 |
 | Rossano／UCSD Today评估讨论 | ⚠️2025访谈线索，[建仓参考](../docs/04-references.md) | 访谈不是论文；“主人反馈唯一可规模化真值”是原仓库推断，已撤回 | 仅背景，访谈原文待核 |
 
 ## ④ 反向

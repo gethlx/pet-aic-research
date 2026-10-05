@@ -13,3 +13,6 @@ Thumbs.db
 
 # Weekly tasks: transient shared write lock
 .weekly-write.lock/
+
+# WorkBuddy local runtime data (per-machine, never publish)
+.workbuddy/
