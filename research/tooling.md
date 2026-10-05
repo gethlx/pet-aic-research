@@ -6,7 +6,8 @@
 
 | 资源 | 任务／形态 | 代码许可 | 权重／数据与商用 | 当前证据与可用性 |
 |---|---|---|---|---|
-| NatureLM-audio | BEATs＋Llama3.1-8B相关生物声学模型 | ✅[当前MIT LICENSE](https://github.com/earthspecies/NatureLM-audio/blob/main/LICENSE) | ✅[所列权重CC-BY-NC-SA-4.0](https://huggingface.co/EarthSpeciesProject/NatureLM-audio)，不据此允许直接商用；[数据逐记录许可](https://projects.earthspecies.org/naturelm-audio/datasets.html)；基座／依赖另查 | 核查2026-10-01；[v1.1指南](https://projects.earthspecies.org/naturelm-audio/latest/quick_start.html)鸟类最强，其他类群较不可靠。版本／commit与对应权重待固定，未本地复现，犬猫适用性待测 |
+| NatureLM-audio | BEATs＋Llama3.1-8B相关生物声学模型 | ✅[当前MIT LICENSE](https://github.com/earthspecies/NatureLM-audio/blob/main/LICENSE) | ✅[所列权重CC-BY-NC-SA-4.0](https://huggingface.co/EarthSpeciesProject/NatureLM-audio)，不据此允许直接商用；[数据逐记录许可](https://projects.earthspecies.org/naturelm-audio/datasets.html)；基座／依赖另查 | 核查2026-10-05：✅论文已发表于[ICLR 2025](https://openreview.net/forum?id=hJVdwBpWjt)；repo v1.0.2、最新提交2026-04-16（#18），窗口内无变化；模型卡明示个体识别未测试、call-type/生活阶段仅鸟类测试过、无犬猫任务；官方README引用合并法（[arXiv 2511.05171](https://arxiv.org/abs/2511.05171)，merging_alpha 0.4–0.6）。未本地复现，犬猫适用性待测 |
+| Dog2vec | 犬吠专用SSL表征 | [实验室页](https://uta-acl2.github.io/research.html)称有code链接，repo与许可待核 | 权重／数据待核 | ⚠️[Interspeech 2025](https://uta-acl2.github.io/research.html)（pp.1698–1702）自述6000+小时犬吠视频预训练，bark类型/声音事件任务相对+8.2%；未读全文，未复现，核查2026-10-05 |
 | AVES／BirdAVES | 动物声音表征 | [ESP仓库入口](https://github.com/earthspecies)，具体repo／版本许可待核 | 权重和数据待核；撤回“开源即可商用”推定 | 维护日期及原“鸟类+20%”对应任务待核 |
 | wav2vec2 | 人类语音预训练迁移 | [fairseq](https://github.com/facebookresearch/fairseq)／[HF模型入口](https://huggingface.co/models?search=wav2vec2)，具体实现许可待核 | 实现许可不覆盖所有checkpoint；具体权重／数据待核 | 犬吠论文方法可借鉴，资源版本和复现待核 |
 | BEATs | 音频编码器 | [Microsoft入口](https://github.com/microsoft/unilm/tree/master/beats)，许可待核 | checkpoint及依赖待核 | 不以代码或论文存在推定商业许可 |

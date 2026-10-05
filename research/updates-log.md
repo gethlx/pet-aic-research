@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-10-05 · 学术工程侧每周扫描首次实际运行（定时任务）
+
+- 运行：开始 2026-10-05 10:08、写入完成约 10:45（Asia/Shanghai）；Git 收尾结果见导航账本。
+- 采集窗口：2026-09-29～2026-10-05 10:08（首次规则：自 2026-10-01 回溯 2 天）；关注对象当前状态与旧事实纠错不受窗口限制。
+- 轮换主题：每月第一周「行为／声学及个体外泛化」。
+- 完整性：**部分完成**——必查三件与定向检索在预算内完成；bioRxiv、ESP 其余 repo release、HF 新条目、Xeno-canto 条款、Google Scholar Alerts 未覆盖；PubMed 访问失败。不登记成功水位，下轮补扫。
+- 入库（papers）：①犬语音素字母表（Wang等，✅ACL 2025 杰出论文，摘要页已核、全文待读）；①CREMD 标注研究（⚠️预印本，923片段×3模式，标注偏差证据）；②按钮后续三条（四按钮游戏系统 Learning & Behavior 2025-11-04、播放音质 Sci Rep 2025-04-28、Biologia Futura 综述 2025-06-01，均元数据级未读全文）；③NatureLM 模型合并论文（⚠️arXiv 2511.05171，官方 README 已引用）。
+- 入库（datasets）：DogSpeak（✅官方 README 自述 77,202 seqs/156犬/33.16h，HF 公开）；EmotionalCanines（⚠️1,400 段 arousal/valence，仅哈士奇/柴犬）；Canine Age Transition（✅79,142 BUs/125犬/11.4h 纵向，CC BY-NC-SA 4.0）。
+- 入库（tooling）：Dog2vec 线索（⚠️Interspeech 2025 自述，repo/许可待核）；NatureLM 行状态更新。
+- 判断变化：①NatureLM-audio 发表状态由「预印本待核」改为「ICLR 2025 已发表」，权重 CC-BY-NC-SA-4.0 未变；②犬吠公开数据格局更新：出现三个大规模公开数据集，均为社交媒体来源、非家庭受控采集，许可均 CC BY-NC-SA 系（不可商用）——不改变「家庭多模态受控数据缺口」判断；③跨数据集个体泄漏风险获官方自述证实（Age Transition×DogSpeak 重叠个体警告），按个体隔离测试的必要性有新证据。
+- 筛除／存疑：arXiv「dog bark」「cat meow」窗口内 0 新增；arXiv 2609.33458（音频 LLM「狗」概念定位，2026-09-27，窗口外且边缘）记观察不入库；Barkopedia 犬情绪数据集仅第三方 HF space 转述，未核，存疑；「Phonetic and Lexical Discovery of Canine Vocalization」与 Dog2vec 详情并入音素字母表条与 tooling 行待核。
+- 深查配额：5/5（模型合并、CREMD、DogSpeak、EmotionalCanines、音素字母表）。
+- 覆盖（均 2026-10-05 上午）：NatureLM repo（github）访问成功——ICLR 2025/v1.0.2/最后提交 2026-04-16；NatureLM HF 权重卡访问成功——许可与 out-of-scope 边界；PLOS ONE 按钮论文引用（Semantic Scholar API）访问成功——3 条后续；犬吠 LREC 论文（Semantic Scholar 检索＋引用）访问成功——12 条引用；arXiv API「dog bark」「cat meow」访问成功——窗口内 0 新增；arXiv CREMD 页、ACL Anthology 音素页、ACM MM 两条目（S2 API）访问成功——深查通过；WebSearch（数据集仓库）访问成功——HF 与官方 repo 线索；PubMed E-utilities **访问失败**（NCBI 反滥用屏蔽）——兽医临床窗口内增量未知，下轮补查，不计为无新增。
+
+---
+
 ## 2026-10-01 · 审核纠正（非定时扫描）
 
 - 采集性质：针对既有错误核对原论文、官方模型卡和监管说明；未全扫四线，不登记成功扫描水位。
