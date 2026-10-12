@@ -4,6 +4,30 @@
 
 ---
 
+## 2026-10-13 · 学术工程侧每周扫描（新规则测试运行，非定时触发）
+
+- 运行：开始 2026-10-13 07:50（系统时间 Asia/Shanghai）；写入开始 2026-10-13 07:56（系统时间实测）；Git 提交时间戳：本批提交后实测补记，本条不做估计（见导航账本同批条目）。
+- 采集窗口：2026-09-29～2026-10-13 07:50（补扫；前两轮均部分完成，成功水位仍未建立）。
+- 轮换主题：无（本轮为手动触发的新规则测试运行）；上轮结转补查：NatureLM 权重卡与 repo 状态、犬吠 LREC 引用重挖、按钮／组合论文后续、HF 新条目、bioRxiv、Xeno-canto 条款。
+- 必查项（逐项）：
+  1. NatureLM HF 权重卡 — **完成** — `huggingface.co/api/models/EarthSpeciesProject/NatureLM-audio` — license 仍 cc-by-nc-sa-4.0、lastModified 2025-09-09、文件含 model.safetensors（连续两周挂账项本轮清除）
+  2. NatureLM repo 版本／条款 — **完成** — GitHub REST API 空返回→备用入口 `commits/main.atom` 成功 — main 最新提交仍 2026-04-16（#18）、v1.0.2，本轮无新提交
+  3. 犬吠 LREC 论文（Abzaliev 等，2024.lrec-main.1432）引用重挖 — **访问失败** — OpenAlex 无收录（DOI 与标题检索均无）、S2 DOI 端点 404、S2 search 端点 429 — 三个备用入口均失败，**不计无新增**，下轮 2026-10-19 继续
+  4. 按钮论文／组合论文后续 — **完成** — `api.openalex.org/works?filter=cites:W4405168186` — 引用 26 条，最新 2025-11-04，窗口内 0 新增（仅对该查询成立）
+- 预算顺序自检：必查是否全部完成 **否**（第3项访问失败）；读原文方法节／表格的条目数 **1**（Barkopedia 个体犬识别 HF 数据卡：训练／测试划分与每犬片段数，属方法级）；深查 2/上限5（不必凑满）
+- 入库 **2**/上限6（只设上限，宁缺毋滥）：
+  1. [Barkopedia 个体犬识别数据集](https://huggingface.co/datasets/ArlingtonCL2/Barkopedia_Individual_Dog_Recognition_Dataset) — 核查 2026-10-13 — ✅MIT — 数字口径：8,924 片段／训练 7,137＋测试 1,787／**60 只犬**（原始采集量未知，来源音频再授权待核） — 证据层级：数据卡方法级 — 为何有价值：首个可直接用于**个体隔离与跨犬泛化**检验的公开犬吠基准，且许可为 MIT（比既有 CC-BY-NC 系宽松），正对"跨数据集个体泄漏"判断缺口
+  2. [犬-人社交游戏犬声数据集](https://doi.org/10.64898/2026.04.20.719471) — 2026-04-23 预印本 — ⚠️CC-BY-NC-4.0 不可商用 — 数字口径：30 场／**17 只犬**／6–24 月龄 — 证据层级：**摘要级，全文未读** — 为何有价值：正对"公开犬声数据多为社媒来源、缺家庭／交互场景受控采集"这一核心缺口，含视频上下文与跨个体泛化的初步证据
+- 判断变化：①犬声数据格局再更新——除三个社媒来源大规模集外，新增**受控采集**（17 犬实验室游戏）与**个体识别基准**（60 犬）两类资源；"家庭／交互场景受控数据缺口"由"几乎空白"改为"已有首个受控公开候选，但规模小、许可不可商用、全文未核"；②出现首个 MIT 许可的犬吠公开基准（Barkopedia 个体识别），商用可行性须与来源音频再授权分开核，暂不改写"多数犬声数据不可商用"的整体结论。
+- 筛除／存疑：组合论文引用中的《Home Ranges of Animals》书章节系列（5 条）为引用解析噪音，筛除；HF 上 Barkopedia 第三方再上传条目（PuneettArora 2026-09-06、hlx1021 2026-07-08）许可与来源再授权未核，存疑不入库；cat meow 各 HF 集（liladhii/isolated-cat-meows 等）规模与许可未核，存疑；Research Square《Adaptation of Speech and Bioacoustics Models》（2026-07-14）未核，列下轮候选。
+- 其他发现（自由填写）：①Barkopedia 在 HF 上另有 breed／age／sex 三个分类子集（ArlingtonCL2，2025-04-15），可用于"同批数据多任务"对照；②Europe PMC 的 `SRC:PPR` 通道可稳定检索预印本（本轮 74 命中），可作 bioRxiv 官网之外的备用入口。
+- 未入库但值得跟踪的线索：Barkopedia 挑战页其余任务子集；犬-人游戏数据集的数据托管仓库（定位后即核许可与规模）；cat meow 各 HF 集。
+- 深查证据层级自报：2/5；本轮新条目整体层级 **混合（1 条数据卡方法级、1 条摘要级）**
+- 覆盖（逐条）：HF models API｜`api/models/EarthSpeciesProject/NatureLM-audio`｜07:52｜发现（无条款变化）；GitHub REST repos｜`api.github.com/repos/earthspecies/NatureLM-audio`｜07:52｜**访问失败（空返回）**→备用入口 ATOM feed 成功；HF datasets API｜search=dog+bark／cat+meow／animal+vocalization，limit 6，sort createdAt desc｜07:53｜发现 4 条候选、2 条入库；OpenAlex｜`works/doi:10.1038/s41598-024-79517-6`、`works?filter=cites:W4405168186&per-page=25&sort=publication_date:desc`｜07:52｜发现 26 条引用、窗口内 0 新增；ACL Anthology｜`2024.lrec-main.1432.bib`｜07:53｜发现（论文正名）；OpenAlex｜`works/doi:10.18653/v1/2024.lrec-main.1432` 与标题检索｜07:54｜**无收录**；S2｜DOI 端点、search 端点｜07:56｜**404／429 访问失败**；Europe PMC｜`SRC:PPR AND (cat OR dog) AND (vocalization OR bark OR meow)`，pageSize 15，sort P_PDATE_D desc｜07:54｜74 命中、1 条入库；crossref｜`works/10.64898/2026.04.20.719471`｜07:55｜发现（许可 CC-BY-NC-4.0）；bioRxiv 全文｜`biorxiv.org/content/10.64898/2026.04.20.719471v1.full`｜07:56｜**访问失败**（返回长度 17，被拒）
+- 未完成与下轮承诺（2026-10-19）：①犬吠 LREC 引用重挖——**必做**，换 OpenAlex 收录恢复／S2 限流解除，不得再挂账；②犬-人游戏数据集全文与数据托管位置——必做；③Xeno-canto 条款——**本轮给结论：降级为季度核查（下次 2027-01 首周）**，理由鸟类为主、非四线重点；④AAC 框架 §6／§9–11 全文、JAVMA 短头颅猫全文——顺延；⑤bioRxiv、NatureLM 权重卡两项挂账本轮已清除。
+
+---
+
 ## 2026-10-13 · issue #2 复核纠正（非定时扫描）
 
 - 性质：针对第二次扫描（f658358）的正文纠正，由 [issue #2](https://github.com/gethlx/pet-aic-research/issues/2)（R1–R8）驱动；papers 原文已改、规则已补，历史周记不回改，被本节取代的口径不得继续引用。证据见 [复核报告](../reports/2026-10-13-research-周更新复核.md)；关键项由我方直读原文独立复核（Europe PMC 全文 XML、PubMed 官方摘要、crossref 参考书目），未直读者已标待核。
