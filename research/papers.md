@@ -11,7 +11,11 @@
 | Accelerometers monitor canine pruritus treatment | [AJVR 2025建仓线索](../docs/04-references.md)，原记录DOI后缀ajvr.24.09.0269；解析入口及全文待核 | 病历联动／皮炎治疗响应线索；实际分析样本、对照和局限待核，不能把项目全部犬数当研究样本 | 临床方法候选 |
 | 米兰大学猫叫三情境分类 | ❓原论文待追溯；[建仓媒体线索](../docs/04-references.md)，核查2026-10-01 | 原记录21猫／最高96%，任务划分、个体隔离及泛化待核 | 待核，不作性能锚点 |
 | Duzce ViT猫叫分类 | ❓题名、venue和原文待核；[建仓线索](../docs/04-references.md) | 原媒体称2024–25；不以报道推定发表或可解释性效果 | 待核 |
-| Feline／Canine Grimace及ML系列 | ❓逐篇题名、物种与原文待拆分；[建仓线索](../docs/04-references.md) | 量表研究与App识别分开；CatsMe!95%+为来源口径⚠️ | 方法线索 |
+| Feline／Canine Grimace及ML系列 | ❓部分拆分——CatsMe!等其余逐篇待核；[建仓线索](../docs/04-references.md)；另⚠️[AI解码动物微表情综述（Animals 2026-08-18）](https://doi.org/10.3390/ani16162578)摘要级核对，核查2026-10-12：明示尚无已验证的通用跨物种框架 | 量表研究与App识别分开；CatsMe!95%+为来源口径⚠️；FGS系Steagall团队条目按下两行归并，不重复计独立证据 | 方法线索 |
+| LLM chatbot评Feline Grimace Scale一致性 | ✅[Scientific Reports 2025-12-09](https://doi.org/10.1038/s41598-025-27404-z)，原文页摘要与方法细节核对（50图、4 chatbot、两轮间隔2月、Bland-Altman），表格未读，核查2026-10-12 | ChatGPT/Gemini/Claude/Perplexity按FGS五动作单元给50张猫面部图像打分、与专家兽医对比：普遍低估；Claude重测后bias<0.1可接受但**LoA跨越FGS镇痛阈值0.39**；ChatGPT LoA未跨阈值但bias>0.1不可接受；Gemini/Perplexity双差——多数chatbot一致性不可接受，可致过度或不足镇痛；资助"Not applicable"；城大香港Steagall组（FGS原量表团队） | **负面结果**：LLM不能直接当兽医疼痛评估器；两月间一致性变化提示模型版本漂移是方法学风险 |
+| 短头颅猫眼痛FGS自动评估管线 | ✅[JAVMA 2026-07-22](https://doi.org/10.2460/javma.26.04.0301)，crossref摘要级核对，全文未读，核查2026-10-12 | 200张短头颅猫眼痛面部图像；关键点定位＋XGBoost回归5子模型对应FGS五动作单元、三种输入配置；可行性评估含局限；Steagall系（与上条同团队，归并不重复计独立证据） | 疼痛ML管线参照（FGS系内部演进）；外部验证待核 |
+| Multi-QuadEmoNet猫犬叫声情绪分类（Pearline等，VIT Chennai） | ✅[Frontiers in Veterinary Science 2026-06-22](https://doi.org/10.3389/fvets.2026.1799281)，CC BY，原文页与PDF摘要级核对（方法节/表格未读），核查2026-10-12 | 自收集数据6000猫＋2000犬音频样本；MFCC＋三级LSTM-GRU（先猫/犬识别再分物种情绪分类）；摘要报犬情绪最高95%（DMAD）、猫90%（CMAD）——**摘要级数字待原文复核**，无个体隔离与外部验证说明；情绪标签来源与标注者未知；数据自收集未公开 | 猫声覆盖缺口首篇正式发表参照（R7补查）；任务与标签不可比，不作精度锚点 |
+| Longhitano等猫情绪音频深度学习（Springer章节） | ⚠️[Springer章节 2026](https://doi.org/10.1007/978-3-032-13458-5_7)，Mendeley目录转介摘要级，核查2026-10-12 | 两个CNN（Kisha/Beti），3000+片段自数据集与在线来源；Beti声音类型85%、Kisha情绪91.8%——摘要级待复核；章节评审状态与数据公开待核 | 观察线索；与上条同为猫声情绪分类，标签方法待核 |
 | 犬语音素字母表发现（Wang等，UT Arlington ACL2组） | ✅[ACL 2025原文页](https://aclanthology.org/2025.acl-long.451/)，Outstanding Paper，核查2026-10-05 | 最小对启发的迭代算法发现犬音位类单元与重复声学单元；摘要页未给数据规模、个体划分与跨犬泛化，待读全文；同组另有Dog2vec（Interspeech 2025）与词法发现论文线索待核 | 方法可借鉴；代码/数据链接见[实验室页](https://uta-acl2.github.io/research.html)，许可待核 |
 | CREMD犬情绪标注研究 | ⚠️[arXiv 2602.15349](https://arxiv.org/abs/2602.15349)，2026-02-17预印本待评审，核查2026-10-05 | 440视频清理为402，制作三呈现条件**合计923呈现条目**（无上下文无音频402＋带上下文无音频402＋带上下文有音频119，缺"无上下文有音频"条件），23标注者：视觉上下文显著提高标注一致性；音频提高标注者对愤怒/恐惧的信心但结论不确定。一致性/信心≠真实情绪准确性。是标注方法与偏差研究，非识别模型结果；数据公开与许可待核 | 标注偏差方法参照（主人/外行标注差异证据） |
 
@@ -24,6 +28,8 @@
 | 四按钮计算机化游戏系统评估 | ⚠️[Learning & Behavior 2025-11-04](https://doi.org/10.3758/s13420-025-00692-1)，[PubMed摘要](https://pubmed.ncbi.nlm.nih.gov/41186871/)级核对，全文未读，核查2026-10-05 | 概念验证（PoC）：1只犬、11个月、66次训练、约21小时，研究游戏操作与认知丰富化；披露一位作者经营相关产品公司。**不是**自主诉求或词义表达的一般AIC证据 | 按钮/ACI线索（单犬PoC，勿外推） |
 | 播放词音质影响犬识别与响应 | ✅[Scientific Reports 2025-04-28](https://doi.org/10.1038/s41598-025-96824-8)，摘要级核对（17只普通犬＋7只Gifted Word Learner犬；真人/特定按钮/扬声器对比），全文未读，核查2026-10-05 | 特定设备测试：FluentPet Classic Speak Up按钮条件表现最差，作者讨论频谱退化；负面结果保留。不能外推全部按钮品牌，不能否定长期训练后的交流 | 声板硬件设计线索（回放音质是参数级约束） |
 | "Talking dogs"科学综述 | ✅[Biologia Futura](https://doi.org/10.1007/s42977-025-00276-0)，Version of record 2025-07-29（2025-06为期次），出版方页面核对，全文未读，核查2026-10-05 | 覆盖犬发声的解剖、认知、演化与技术（含声板），非仅声板综述；含反对拟人化解读与动物福利论证 | 背景综述线索 |
+| 按钮AAC方法论框架（"情境化交流事件"） | ⚠️[Frontiers in Animal Science 2026-08-26](https://doi.org/10.3389/fanim.2026.1907975)，crossref摘要级核对，全文未读，核查2026-10-12 | 单作者Wayenberg；主张分析单元不是孤立按键而是"情境化交流事件"（按键＋身体朝向、注视、先前活动、环境、人类回应、交互历史、歧义、不使用与事后否定）；针对公民科学队列与大词表声板的解读不确定性提出中间路线；引用组合论文（s41598-024-79517-6） | 按钮/ACI方法线索（与既有"主人记录与选择偏差"判断一致，提供操作化路径）；操作化细节待读全文 |
+| 声板与犬交流评论（Kuhlmeier） | ✅[Learning & Behavior 2025-07-22](https://doi.org/10.3758/s13420-025-00679-y)，S2与crossref元数据级核对（评论文章，无摘要），核查2026-10-12 | 声板现象评论，引用组合论文与四按钮系统；观点内容待读原文 | 背景评论线索 |
 
 ## ③ 推理
 
@@ -32,6 +38,7 @@
 | NatureLM-audio | ✅[ICLR 2025正式发表](https://openreview.net/forum?id=hJVdwBpWjt)；[arXiv 2411.07186](https://arxiv.org/abs/2411.07186)；[官方指南](https://projects.earthspecies.org/naturelm-audio/latest/quick_start.html)，核查2026-10-05 | 生物声学基准／跨物种任务；鸟类表现最强，犬猫家庭意图待测；权重许可见tooling，2026-10-05确认ICLR 2025发表 | 研究候选；不认定直接商用 |
 | NatureLM模型合并零样本泛化（Marincione等） | ⚠️[arXiv 2511.05171 v2](https://arxiv.org/abs/2511.05171)，2025-11-19待评审；[官方repo已引用](https://github.com/earthspecies/NatureLM-audio)，核查2026-10-05 | NatureLM与基座Llama插值合并恢复指令遵循：未见物种闭集任务（**40标签/425样本，F1 0.09→0.28**）——"200%+"为相对增益，绝对水平仍低；merging_alpha 0.4–0.6任务相关；提示词变化可致答案失稳 | 部署候选路径；独立复现待核；不扩大为犬猫意图可用 |
 | Rossano／UCSD Today评估讨论 | ⚠️2025访谈线索，[建仓参考](../docs/04-references.md) | 访谈不是论文；“主人反馈唯一可规模化真值”是原仓库推断，已撤回 | 仅背景，访谈原文待核 |
+| AI在伴侣动物-人类交互中的角色综述 | ✅[ACM TOMM 2026-06-09](https://doi.org/10.1145/3819589)，crossref摘要级核对，核查2026-10-12 | Liu/Huang/Yip/She；三阶段分析框架（监测→解释→赋权）＋"significant otherness"哲学透镜；按核心任务分类技术的综述/立场文；引用组合论文 | 框架参照；对四层路线分类的印证待细读 |
 
 ## ④ 反向
 
