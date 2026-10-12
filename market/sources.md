@@ -45,12 +45,17 @@
 
 ## 候选信源（待验证，暂不作为常规扫描源）
 
+- [Bending Spoons IR](https://investors.bendingspoons.com/)：上市公司业绩与收购披露官方入口。2026-10-12 首轮验证：Q2 2026 公告页✅（Nasdaq: BSP、Tractive 列主业务）且业绩 PDF✅原文直读（Tractive EV $759M 含 $115M 递延、IPO 净募资 $1.10B）。Tractive 相关商业事件的权威披露源，下轮可转正 B 类。
+- [亿欧数据企业库](https://data.iyiou.com/)：企业主体/融资结构化档案。2026-10-12 首轮验证：Moonback 主体（深圳煦月，2026-01-22 成立）条目完整；条目级可靠，非工商原始登记，深层股权仍需企查查/天眼查。下轮可转正 B 类。
+- [PricingArchive](https://pricingarchive.com/changes/tractive-subscription)：订阅价格历史追踪器。2026-10-12 首轮使用：Tractive 2025-10／2026-09 两快照，快照间币种/口径不一（$ vs €），仅作价格变动线索，引用前须回查官网现价。
+- [StockTitan](https://www.stocktitan.net/)：SEC 文件转引与摘要。2026-10-12 转引 Bending Spoons 6-K 全文（Tractive EV $759M）。仅作官方披露定位线索，数字引用应回查 IR 原文后标注。
+
 - [Seedtable](https://www.seedtable.com/companies/tractive)：创业公司融资／收购时间线库。2026-10-05 用于交叉核验 Bending Spoons 收购 Tractive（登记 exit 2026-03-25、交割 2026-05），与 IJR/Wikipedia、AI.jp 口径一致；金额仍需以 Bending Spoons 官方财报复核。融资／工商周（每月第一周）可作交叉验证源。
 - [NewMarketPitch](https://newmarketpitch.com/blogs/news/pet-tech-top-startups-valuation)：宠物科技估值与交易汇总博客，2026-10-05 提供转述官方披露的 EV $759M 口径；二手博客，仅作线索定位，金额须回查 Bending Spoons 原始披露。
 
 ## 每周重点与轮换（执行方法以AUTOMATION为准）
 
-- 每周必查：Moonback／萌小译的原公告及具体产品状态（Moonback 官网截至 2026-10-05 仍未找到，检索原文并保持待核；萌小译出货存在 2 万 vs 1.2 万自报矛盾，下轮查工商／渠道证据）；[Tractive](https://tractive.com)当前状态（含 Bending Spoons 收购后订阅条款变化）；[Whistle停服公告](https://www.whistle.com/blogs/news/whistle-joins-the-tractive-family)有无新迁移信息；[PetPace](https://petpace.com)；[FluentPet](https://fluent.pet)。产品销售、服务条款和价格须对应地区及型号。
+- 每周必查：Moonback／萌小译的原公告及具体产品状态（Moonback 官网截至 2026-10-12 仍未找到，moonback.me 为无关西班牙公司已排除；萌小译工商已核✅企查查 2026-10-12，出货存在预售 1 万／出货 2 万／销售 1.2 万三口径矛盾，继续找渠道证据）；[Tractive](https://tractive.com)当前状态（含 Bending Spoons 收购后订阅条款与提价动向，官方披露经 Bending Spoons IR）；[Whistle停服公告](https://www.whistle.com/blogs/news/whistle-joins-the-tractive-family)原 URL 已重定向至 Tractive 官网（2026-10-12 实证），迁移信息改经 Tractive 官方渠道跟踪；[PetPace](https://petpace.com)；[FluentPet](https://fluent.pet)。产品销售、服务条款和价格须对应地区及型号。
 - 每月第一周：融资／工商和行业媒体；第二周：公开长期使用、订阅／退货／停服反馈；第三周：App与猫健康／如厕产品；第四周及第五周：训练、非AI替代与M5对照。展会／众筹在相关窗口加入，不机械每周扫全年展会。
 - 每轮先执行重点，余下预算再做轮换。每个来源在周记写实际URL／检索式、窗口、访问结果；搜索摘要不是读过全文。登录受限、付费墙和空检索分别记状态，不当无新增。
 - 口碑记录版本、场景、持续时长和可见样本；主观评述不充当精度测试，平台排名不当销量。缺少可重复访问入口的旧名单保留作候选，不声称完整覆盖。
