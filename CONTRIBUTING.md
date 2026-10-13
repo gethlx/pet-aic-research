@@ -1,11 +1,8 @@
 # 协作规范（CONTRIBUTING）
 
-本仓库由两方协作维护：
+本仓库由多位协作者维护（人与 AI）。两台机器文件互不可见，**GitHub 是唯一真源**；本地和云端各自保留工作副本，只通过 Git 同步。
 
-- **晶晶**（仓库所有者）：在本地 Mac 上工作，使用 Codex。
-- **老邪**（AI 助手）：在独立的云端电脑上工作，使用 Codex CLI / Claude Code CLI。
-
-两台机器文件互不可见，**GitHub 是唯一真源**；本地和云端各自保留工作副本，只通过 Git 同步。
+**协作者身份与签名以 [CONTRIBUTORS.md](CONTRIBUTORS.md) 为准**（含军师／WorkBuddy、老邪、GPT、晶晶等名册与 trailer 约定）；本文件不复制名册，避免漂移。其余权责待主公确认后再补。
 
 ## 1. 同步
 - **交任务给老邪之前，先推送本地改动**：`git add <文件>` → `git commit -m "说明"` → `git push`。
@@ -15,12 +12,13 @@
 
 ## 2. 分支
 - **一个任务一个分支**：晶晶用 `jingjing/xxx`，老邪用 `laoxie/xxx`。
-- `main` 只接受 PR 合并，**PR 由晶晶审核后合并**；老邪不直接推 main、不自行合并。
+- `main` 只接受 PR 合并，**PR 由晶晶审核后合并**；老邪不直接推 main、不自行合并。**例外**：定时任务的 `weekly-market:` / `weekly-research:` 提交按 `AUTOMATION.md` 直推 main。
 - **不要两人同时改同一个分支**；一个任务只交给一个人。
 
 ## 3. 提交
 - 小步、频繁提交，提交信息写清楚做了什么（例：`docs: 补充犬声研究条目`）。
 - 建议让 Codex 在每个任务结束时自动 commit 并 push 到当前任务分支。
+- 身份与 trailer 按 [CONTRIBUTORS.md](CONTRIBUTORS.md) 执行。
 
 ## 4. 需求与文档
 - 任务需求、设计说明、待办写进仓库（`docs/`）或 GitHub Issue，不只留在聊天里——老邪看不到你本地的文件。
