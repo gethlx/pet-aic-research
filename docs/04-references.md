@@ -7,15 +7,20 @@
 
 1. **Bastos, A.P.M., Houghton, Z.N., Naranjo, L., Rossano, F.** *Soundboard-trained dogs produce non-accidental, non-random and non-imitative two-button combinations.* **Scientific Reports**, 2024-12-09. DOI: 10.1038/s41598-024-79517-6
    — 152 只犬、21 个月、26 万+ 次按钮按压；双词组合非随机、非模仿。
-2. **UC San Diego / Rossano 团队** 按钮词义理解研究，**PLOS ONE**, 2024。
+2. **Bastos, A.P.M., Evenson, E.L., Wood, L.J., Houghton, Z.N., Naranjo, L., Smith, et al.** *How do soundboard-trained dogs respond to human button presses? An investigation into word comprehension.* **PLOS ONE** 19(8): e0307189, 2024-08-28. DOI: 10.1371/journal.pone.0307189
+   — 作者与卷期经 Crossref 核对 2026-10-13（Crossref 登记 13 位作者；完整列表以原文为准）。
    — 预注册设计；30 只入户 + 29 只远程实验；狗响应词本身而非主人肢体线索。
-3. **Abzaliev, A., et al. (Univ. of Michigan & INAOE)** *Towards Dog Bark Decoding: Leveraging Human Speech Processing for Automated Bark Classification.* **arXiv:2404.18739**（2024-04），LREC-COLING 2024 报告。
+3. **Abzaliev, A., Pérez-Espinosa, H., Mihalcea, R.** *Towards Dog Bark Decoding: Leveraging Human Speech Processing for Automated Bark Classification.* **LREC-COLING 2024 正式会议论文**（ACL Anthology 2024.lrec-main.1432, pp. 16480–16486；arXiv:2404.18739, CC BY 4.0）。
+   — 关键口径（表2–表5，2026-10-13 复核）：四类情境 62.18% vs 基线 56.37%（+5.81pp，各类 F1 45–91%）；品种 62.28% vs 基线 58.76%；性别 68.90%／70.07% vs 基线 68.70%；四类**全部为陌生人在场**；按犬分组十折。
    — 个体49.95%、品种62.28%、四类情境62.18%（基线56.37%）；详见F的原论文复核。
-4. **Mars Petcare / Pet Insight Project** *Deep Learning Classification of Canine Behavior Using a Single Collar-Mounted Accelerometer: Real-World Validation.* **Animals**, 2021. DOI: 10.3390/ani11061549
+4. **Chambers, J., Yoder, N., Carson, A., Junge, J., Allen, J., Prescott, K., et al.** *Deep Learning Classification of Canine Behavior Using a Single Collar-Mounted Accelerometer: Real-World Validation.* **Animals** 11(6): 1549, 2021-05-25. DOI: 10.3390/ani11061549
+   — Mars Petcare／Pet Insight Project 研究；作者经 Crossref 核对 2026-10-13（登记 10 位作者）。
    — 抓挠 0.870/0.997、舔舐 0.772/0.990、进食 0.988/0.983（灵敏度/特异性）。
-5. **Pet Insight Project** *Retrospective observational study shows accelerometers can monitor effects of canine pruritus treatment.* **AJVR**（AVMA Journals）, 2025, 86(3). DOI: ajvr.24.09.0269
+5. **O'Rourke, S.T., Redford, J., Carson, A., Lyle, S., Kresnye, B., O'Flynn, M., et al.** *Retrospective observational study shows accelerometers can monitor effects of canine pruritus treatment.* **American Journal of Veterinary Research** 86(3), 2025-03. DOI: 10.2460/ajvr.24.09.0269
+   — Pet Insight Project 研究；作者与卷期经 Crossref 核对 2026-10-13。
    — 病历联动与治疗响应候选；实际分析样本待读全文，不把项目全部犬数当临床研究样本。
-6. **Andics, A., et al.** *Neural mechanisms for lexical processing in dogs.* **Science**, 2016.
+6. **Andics, A., Gábor, A., Gácsi, M., Faragó, T., Szabó, D., Miklósi, Á.** *Neural mechanisms for lexical processing in dogs.* **Science** 353(6303): 1030–1032, 2016-09-02. DOI: 10.1126/science.aaf3777
+   — 题名与卷期经 Crossref 核对 2026-10-13；文献界对该文脑图左右标注有更正讨论，Crossref 未登记更正记录——**写"有无更正"前须到 Science 官方页面核对**，暂标待核。
    — 犬词／语调处理研究；脑区表述、题名与后续修正待核，不作工程干预证据。
 7. **Müller, C.A., et al.** 犬通过触屏辨别人类喜怒表情, 2015（Learning & Behavior）。
 8. **Pongrácz, P., et al.（Family Dog Project, ELTE）** 犬跟随 2D 屏幕指向指令, 2003。
@@ -45,6 +50,7 @@
     - AsiaICT《AI Pet Language Translator Priced at 799 Yuan》2026（用户实测 30–50% 口碑、94.6% 争议）
 20. **MeowTalk**：
     - Scientific American《What Is Your Cat Trying to Say? These AI Tools Aim to Decipher Meows》（2025）— 米兰 96% 研究、Duzce 大学 vision transformer、百度专利、Reznikov 2025-05 未评审 preprint（95%+ ❓）
+    - ✅**"米兰 96%"原文已追溯**（2026-10-13 直读 PMC6719916）：Ntalampiras S., Ludovico L.A., Presti G., Prato Previde E., Battini M., Cannas S., Palestrini C., Mattiello S. *Automatic Classification of Cat Vocalizations Emitted in Different Contexts.* **Animals** 2019, 9(8):543. DOI: 10.3390/ani9080543（CC BY）——21 只成年猫（10 缅因同一主人＋11 欧短不同主人）、448 段、DAG-HMM 95.94%（对照 HMM／SVM／ESN 68.9–80.95%），十折交叉验证**未说明按猫隔离**，三情境为实验诱发（等食／陌生隔离／梳毛）。
     - Adopt a Pet / Nat Geo 转述：2020 上线、2000 万下载、10 亿+ 叫声；官方 90%（2021，⚠️ 自家验证）vs 创始人对 Slate 实称 ~70%。
 21. **WIRED**《This Camera-Equipped Automatic Litter Box Is a Prime Day Deal》— PETKIT Purobot Ultra（视觉 AI 猫砂盆产品形态参照）。
 22. **SoundTalks（勃林格殷格翰）** 官网 soundtalks.com — KU Leuven 自 1996 年研究、50+ 论文、157 万小时声音数据、早 3–5 天预警、ROI 4.27；人民政协网进博会报道（2023-11-14，覆盖中国 22 省）。
@@ -73,7 +79,7 @@
 
 | 对象 | 原始入口 | 核实范围与限制 |
 |---|---|---|
-| 犬吠分类 | [LREC-COLING原论文](https://aclanthology.org/2024.lrec-main.1432.pdf) | 表4四类情境62.18%，多数类基线56.37%；表5性别分类68.90%／70.07%。按犬分组十折评估；三类主要犬种，不能当家庭意图翻译精度。末尾说明数据和基线可向作者申请，不是直接公开下载或商用许可。 |
+| 犬吠分类 | [LREC-COLING原论文](https://aclanthology.org/2024.lrec-main.1432.pdf) | 表4四类情境62.18%，多数类基线56.37%（**增益仅+5.81pp；各类F1 45–91%**）；表3品种62.28%，**多数类基线58.76%**；表5性别68.90%／70.07%，**多数类基线68.70%，未明显超基线**；表2个体49.95%（基线5.03%）。四类情境**全部为陌生人在场**；"袭击主人"类因与很凶吠不可区分被剔除；按犬分组十折评估；三类主要犬种，不能当家庭意图翻译精度。末尾说明数据和基线可向作者申请，不是直接公开下载或商用许可。 |
 | NatureLM代码 | [LICENSE](https://github.com/earthspecies/NatureLM-audio/blob/main/LICENSE) | 当前代码MIT，不覆盖权重和数据。 |
 | NatureLM权重／能力 | [官方模型卡](https://huggingface.co/EarthSpeciesProject/NatureLM-audio) · [v1.1指南](https://projects.earthspecies.org/naturelm-audio/latest/quick_start.html) · [数据说明](https://projects.earthspecies.org/naturelm-audio/datasets.html) | 所列权重CC-BY-NC-SA-4.0；鸟类表现最强，其他类群较不可靠；数据逐记录许可。v1.1 demo不代表特定权重许可或犬猫验证。 |
 | Whistle | [2025-07-28官方公告](https://www.whistle.com/blogs/news/whistle-joins-the-tractive-family) · [Tractive收购公告](https://tractive.com/blog/en/press/tractive-acquires-whistle) | 收购及原服务停用安排；不证明迁移体验或继承原算法效果。 |
@@ -84,4 +90,4 @@
 | 欧盟MDR | [2017/745第2条](https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng) | medical device定义为人用，不应自动套用宠物器械；兽用按国家、用途查要求。 |
 | 欧盟CE | [官方指引](https://europa.eu/youreurope/business/product-rules-compliance/general-product-compliance/ce-marking/index_en.htm) | 无中央机构给所有产品发CE使用许可；查厂商符合性声明与适用规则，不虚构通用CE认证记录库。 |
 
-待补证据：猫叫96%的原论文与测试划分；萌小译销量、精度与用户抽样；SoundTalks ROI样本和设计；Moonback产品实际上市与规格；部分历史文献正式题名、venue和数据来源。
+待补证据：萌小译销量、精度与用户抽样；SoundTalks ROI样本和设计；Moonback产品实际上市与规格；部分历史文献正式题名、venue和数据来源；Andics 2016 脑图标注更正的官方定性（见 A6）。**2026-10-13 已清除**：猫叫 96% 的原论文与测试划分（→ Ntalampiras 等 Animals 2019，95.94%，见 C.20；⚠️其十折未说明按猫隔离，与犬吠按犬分组口径不可比）。
