@@ -4,6 +4,12 @@
 
 ---
 
+## 2026-10-14 · Barkopedia任务口径纠正（非扫描）
+
+- 原口径：10月13日周记／账本及datasets将其称为“个体隔离／跨犬泛化公开基准”。此口径作废，历史记录保留但不得继续引用。
+- 依据：[官方HF数据卡](https://huggingface.co/datasets/ArlingtonCL2/Barkopedia_Individual_Dog_Recognition_Dataset)，2026-10-14读回：训练／测试均约每个60犬ID取片段；任务是已知犬身份分类，不是留出未见犬的泛化。标签隐藏不等于按犬分组。
+- 修改：datasets当前行纠正，规模与MIT卡片标签保留，来源再授权仍未知。未下载数据、未运行模型，不推进扫描成功水位。
+
 ## 2026-10-13 · issue #9/#10/#11 事实核查落地（非定时扫描）
 
 - 性质：协作方（老邪，云端）以 issue 形式提交三组事实核查；军师逐项**直读原始来源独立复核**后落正文，不照抄 issue。复核通道：猫叫论文全文（Europe PMC PMC6719916 XML）、犬吠论文表格（arXiv:2404.18739 HTML 版，与 ACL Anthology 同版）、四条元数据（Crossref API）。
