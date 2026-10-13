@@ -1,7 +1,3 @@
-先按「必须联网检索原文」来做：我会先定位 Tampere 官方数据集发布页和许可证，再逐篇核对夜间活动、CCD、项圈验证研究的 DOI 与数字。接下来打开 Mendeley/Kaggle 官方页核对许可证原文，并并行检索骨关节炎夜间活动、CCD 睡眠和项圈验证论文。官方页已确认 Mendeley 标 CC BY 4.0、Kaggle 有一份标 CC BY-SA。接下来打开论文全文，核对样本量、设备、效果量和许可证条款原文。接下来打开开放获取原文，提取样本量、设备位置、效果量和许可证条款。继续拉开放获取 PDF，补齐 Knazovicky、Smith、Mondino、PetPace/Whistle/Actical 的样本量与数字。还差几篇的精确数字：Knazovicky 的 Actical 结果、Smith 的 FitBark、PetPace 样本量，以及 Tampere 数据集版本史。检索结论如下。官方数据集以 **Mendeley Data 的 CC BY 4.0** 为准；Kaggle 上的 CC BY-SA 4.0 是转载误标。第二部分的同行评审证据能支持“群体层面夜间活动/休息模式会随疼痛或认知改变”，**不能**支持用加速度计单独诊断某病，对“个体自身基线偏移报警”也只是间接、尚缺前瞻验证。
-
----
-
 # 一、Tampere 大学犬只加速度计/陀螺仪行为识别数据集
 
 ## 1. 官方发布页（以这个为准）

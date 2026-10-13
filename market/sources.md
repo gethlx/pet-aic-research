@@ -27,6 +27,7 @@
 |---|---|
 | Amazon 宠物智能类目榜（US/DE/JP） | 品类排名变化、新品入场、价格带 |
 | 小红书 / 抖音 关键词搜索 | 用户实测口碑（翻译器/项圈类舆情） |
+| 京东／天猫公开评价、什么值得买、国内应用商店 | 国内具体型号／App版本的实际使用、收费与退订；仅访问公开可读内容，受限写失败 |
 | Reddit r/dogs / r/cats / r/Pets | 海外用户长测反馈 |
 | Trustpilot / Amazon Reviews | 差评模式（精度、续航、佩戴问题） |
 
@@ -39,8 +40,8 @@
 
 ## E. 重点公司与关键词
 
-- **公司监测名单**：Moonback、萌小译/PettiChat、Akvelon(MeowTalk)、FluentPet/CleverPet、PETKIT、CATLINK、Whistle（历史）/Tractive、PetPace、Sylvester.ai、Invoxia、Fi、Moggie、SoundTalks（对照系）
-- **中文关键词**：宠物翻译器、AI 宠物、智能项圈 健康、宠物大模型、数字生命档案、宠物穿戴 融资
+- **公司监测名单**：Moonback、萌小译/PettiChat、PETKIT、CATLINK、萤石／小米等摄像头宠物功能；国外对照Traini、Furbo、Petcube、Akvelon(MeowTalk)、FluentPet/CleverPet、Whistle（历史）/Tractive、PetPace、Sylvester.ai、Invoxia、Fi、Moggie、SoundTalks（对照系）
+- **中文关键词**：宠物翻译器、宠物摄像头 看不懂／误报／订阅、宠物行为 解释、AI 宠物、智能项圈 健康、宠物大模型、数字生命档案、宠物穿戴 融资
 - **英文关键词**："pet translator"、"AI pet collar"、"pet health monitor"、"digital pet profile"、"animal language AI"、"smart litter box health"
 
 ## 候选信源（待验证，暂不作为常规扫描源）

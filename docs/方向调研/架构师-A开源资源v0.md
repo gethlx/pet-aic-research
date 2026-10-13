@@ -95,6 +95,6 @@
 | torch2trt（Jetson） | MIT | 2024-08-17 | https://github.com/NVIDIA-AI-IOT/torch2trt |
 
 ## 9. 小结
-- **可商用的组合**：RT-DETR 或 YOLOX（检测）+ supervision（跟踪/事件）+ MMPose 或 ViTPose 代码（权重要自训或核数据许可）+ Qwen2.5-VL-7B、InternVL3-8B、MiniCPM-V 4.5 中的一个（apache-2.0，基座许可另核）+ OpenVINO、Hailo 或 RKNN（部署）。
-- **主要缺口**：没有可商用的家用摄像头犬行为数据集，也没有全生命周期（尤其老年犬）和红外夜视数据；视频 VLM 在动作定位和计数上接近随机，并且存在"倾向答 yes"的幻觉。
+- **可参考的组件线索，尚非已验收组合**：RT-DETR／YOLOX、supervision、MMPose／ViTPose，以及所列视频模型和部署工具。代码、权重、训练数据、依赖及具体版本仍须分别核验；未完成本地运行，不整体认定商用或有效。
+- **主要缺口**：本轮未定位到许可及家庭适用性均已核齐的完整数据方案，尤其夜视与跨生命周期。所列视频模型风险仅适用于对应基准及版本；不能扩展为所有当前VLM的统一性能结论。
 - **最大的许可陷阱**：Ultralytics/YOLOv10 是 AGPL；SuperAnimal 权重非商用；Qwen2.5-VL-3B 是研究许可；从 YouTube/抖音来的视频数据。
