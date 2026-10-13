@@ -1,5 +1,7 @@
 # 05 · 产品假设（草稿）
 
+> ⚠️ **状态说明（2026-10-13 晚更新）**：本文是 2026-10-13 上午的早期假设草稿；MVP 已暂停；方向已调整为 **B（老年/慢病宠物夜间监测）为主、A（摄像头）作第二路信号、C（按钮板）待定**，正在补充调研。文中关于「独处日报」MVP 的部分不再代表当前方案。
+
 > 状态：草稿，2026-10-13，产品视角。本文只提出**待验证假设**，不是结论。所有数字均标出处；未附出处处只作定性陈述。讨论入口：[#4 目标用户与场景](https://github.com/gethlx/pet-aic-research/issues/4) · [#5 关键失败假设](https://github.com/gethlx/pet-aic-research/issues/5) · [#6 MVP 与低成本验证](https://github.com/gethlx/pet-aic-research/issues/6)。
 
 ## 0. 定位前提
