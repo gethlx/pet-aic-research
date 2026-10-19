@@ -4,6 +4,42 @@
 
 ---
 
+## 2026-10-19 · 学术工程侧每周扫描第四次运行（定时任务）
+
+- 运行：开始 2026-10-19 10:07（任务触发，系统时间）；写入开始 2026-10-19 10:20（锁 owner.txt 实测）；Git 提交时间戳：待本笔提交后实测补记（补记笔填入）。
+- 采集窗口：2026-09-29～2026-10-19 10:07（补扫；前三轮均部分完成，成功水位未建立，下轮窗口起点仍 2026-09-29）。
+- 轮换主题：10 月第三周「疼痛／生理／健康预警的外部与纵向验证」；上轮结转补查：犬吠 LREC 引用重挖（必做）、17 犬游戏数据集全文与数据托管、AAC §6／§9–11、JAVMA 短头颅猫个体隔离与外测、Barkopedia 任务区别复核、Multi-QuadEmoNet 方法节确认。
+- 必查项（逐项）：
+  1. 犬吠 LREC 论文引用重挖 — **完成（连续两周失败后告破）** — `api.openalex.org/works/doi:10.63317/3fjpkdcjtvyx` — 失败根因定位：前两轮查的 `10.18653/v1/2024.lrec-main.1432` 是 ACL 内部标识、未在 OpenAlex/S2 注册；OpenAlex 实际收录该论文于 DataCite 前缀 DOI **10.63317/3fjpkdcjtvyx**（W7131856971，正名《Towards Dog Bark Decoding》）。引用共 2 条（见下），窗口内 0 新增；S2 DOI 端点本轮仍查无此文（404 而非 429）
+  2. 按钮论文（PLOS ONE）引用 — **完成** — `api.openalex.org/works?filter=cites:W4401948191` — 总 11 条，窗口内 0 新增
+  3. 组合论文（Sci Rep）引用 — **完成** — `api.openalex.org/works?filter=cites:W4405168186` — 总 26 条，窗口内 0 新增
+  4. NatureLM repo＋权重卡 — **完成** — HF API `models/EarthSpeciesProject/NatureLM-audio`（无变化：lastModified 2025-09-09、cc-by-nc-sa-4.0）＋ `github.com/earthspecies/NatureLM-audio/commits/main.atom`（api.github.com 整站 403 限流，主站 atom 备用成功）— **main 新提交 d95b645（2026-10-13T08:12Z）"Clear Dependabot vulnerabilities: dependency bumps, torch 2.6 on CUDA…"，依赖修补类，非模型行为或条款变化**
+- 预算顺序自检：必查是否全部完成 **是**（4/4）；读原文方法节／表格的条目数 **1**（AAC 框架全文 §6–§11 直读）；深查 **5**/上限5（AAC 全文、JAVMA 摘要复读、JFMS 摘要、17 犬 Zenodo 数据卡、ICASSP 摘要）
+- 入库 **2**/上限6（只设上限，0–2 条亦属正常，未凑数；均为窗口外补入——依"允许补入改变判断的旧文献"条款）：
+  1. [Challenges using the Feline Grimace Scale in brachycephalic cats](https://doi.org/10.1177/1098612x251401338)（J Feline Med Surg，2025-11-18）— ✅摘要级 — 数字口径：**28 只猫**（前瞻随机盲法、95 张图像、4 评分者）；口鼻张力 ICC 0.47、胡须变化 0.34（差），耳位 0.81、眼位 0.84（良好），FGS 总分 0.76；LoA −0.37～0.22 — 证据层级：摘要级，全文未读 — 为何有价值：人工评分可靠性在短头颅猫**分动作单元不均**，直接解释同团队 JAVMA 自动管线为何"去口鼻＋胡须"配置最佳——把"需构型专门数据集"的失效机制从模型层下沉到量表动作单元层；Steagall 系归并
+  2. [Comparing Self-Supervised Learning Models Pre-Trained on Human Speech vs Animal Vocalizations](https://doi.org/10.1109/icassp49660.2025.10889684)（ICASSP 2025，2025-03-12）— ✅摘要级 — 数字口径：3 个生物声学数据集×2 类任务（样本量摘要未给，待全文）；动物声预训练仅**边际优于**人类语音预训练、ASR 微调结果混合 — 证据层级：摘要级 — 为何有价值：为 LREC 犬吠论文"借人类语音处理"路线提供旁证（非劣势选择）；亦是 LREC 引用重挖命中之一
+- 判断变化：①AAC 框架由"摘要级候选观察方案"升级为**方法节级直读**——§6 六类编码＋成对反类目＋非对称重分类＋20% 盲外编、§10 八条可证伪模式、§11 作者自认非实证；仍非经验验证，但操作化路径与可证伪条件已具体化；作者利益关系（CCR—Haverim 私营犬交流实验室）明记；②FGS 自动管线失效获机制解释（人工评分在口鼻/胡须单元本就不可靠）——"需构型专门数据集"判断**加强**；③预训练路线判断获旁证：动物域预训练非必需，人类语音 SSL 表征已够用——不改变犬吠精度结论本身；④17 犬数据集托管由"未知"落定为 Zenodo＋Sci Data 在审；⑤JAVMA 摘要复读后明确**未见个体隔离与外测描述**（维持未知，不作已核陈述）。
+- 筛除／存疑：Europe PMC 窗口查询（grimace scale/pain face/pain recognition＋cat/dog）6 命中全不相关（浆细胞瘤、镇痛 RCT、非动物通信）——**0 新增仅对该查询成立**；arXiv "dog bark"／"cat meow" 窗口内 0 新增（该查询口径）；HF datasets dog bark/cat meow 无窗口内新条目（Barkopedia 第三方再上传 PuneettArora 09-06、hlx1021 07-08 维持 10-13 存疑挂账）。
+- 其他发现（自由填写）：①OpenAlex 对 LREC 论文的收录 DOI 是 **10.63317 DataCite 前缀**而非 ACL 的 10.18653 内部标识——后续引用追踪一律以 10.63317 为准，避免重蹈两轮失败；②api.github.com 整站 403 时 `github.com/<owner>/<repo>/commits/main.atom` 主站 atom 仍可用（连续第三次验证）；③Europe PMC 出现一次 503（10:14 前后）数分钟内自行恢复，重试即可，无需换通道；④17 犬 Zenodo 描述披露多机位视频＋同步音结构——对"声学×视觉多模态对齐"研究是额外素材，超出纯音频价值；⑤ICASSP 论文自身有 5 条引用，可作下轮引用追踪起点。
+- 未入库但值得跟踪的线索：**Scientific Data 在审**的 17 犬数据描述论文（发表即核方法节，替换摘要级）；ICASSP 2025 的 5 条引用；《A Lightweight 1D-CNN for Bark and Howl Classification》（Applied Sciences 2026-07-08，10.3390/app16136819，标题含 howl 疑似犬狼声分类，未核）；JFMS 论文同团队其余 FGS 外部验证工作。
+- 深查证据层级自报：5/5；本轮新条目整体层级 **摘要级**（2 条新入库均未读全文；AAC 框架为本轮唯一方法节级直读对象，属存量行升级非新增）。
+- 覆盖（逐条，访问时间 2026-10-19 上午）：
+  - OpenAlex works/DOI｜`10.63317/3fjpkdcjtvyx`、`cites:W7131856971`｜10:10｜发现（2 引用，窗口内 0 新增）
+  - OpenAlex works/DOI｜`10.1371/journal.pone.0307189`→cites、`10.1038/s41598-024-79517-6`→cites（per-page 50）｜10:12｜发现（11/26 条总量，窗口内 0 新增）
+  - HF API models｜NatureLM-audio｜10:11｜发现（无条款变化）
+  - GitHub API repos＋atom｜`api.github.com` 403｜10:12｜**访问失败**→备用 `github.com/.../commits/main.atom` 成功（发现 d95b645 新提交）
+  - S2 API｜DOI 端点×2、search 端点×2｜10:10–10:14｜**访问失败**（404 查无此文，非限流）→OpenAlex 已补齐，不再重试 S2
+  - Europe PMC search｜grimace scale 窗口查询（FIRST_PDATE 2026-09-29 TO 2026-10-19）｜10:16｜发现 6 命中全不相关→0 新增；另 DOI 查询 2 次（JAVMA/JFMS）｜10:24｜发现
+  - Europe PMC search｜brachycephalic＋grimace 标题检索｜10:24｜发现（JAVMA 正确 DOI＋JFMS 新条目）
+  - Frontiers 官网 HTML｜`fanim.2026.1907975/full`（curl 直抓 575KB）｜10:19｜发现（§6–§11 全文）
+  - bioRxiv 全文/PDF/Highwire｜10.64898/2026.04.20.719471 三通道｜10:14–10:17｜**访问失败**（17 bytes／403）→bioRxiv API＋crossref＋Zenodo 记录补齐元数据；全文仍不可得
+  - Zenodo API＋WebSearch｜Dog play pant 托管定位｜10:29｜发现（10.5281/zenodo.18972387）
+  - arXiv API｜"dog bark"、"cat meow"（sortBy submittedDate，max_results 8）｜10:36｜窗口内 0 新增（http 301→https 重试成功）
+  - HF API datasets｜dog bark／cat meow（limit 12，createdAt desc）｜10:37｜无窗口内新条目
+- 未完成与下轮承诺（2026-10-26）：①轮换 10 月第四/五周「可取得数据／权重、相关硬件供给和法规」（正对 17 犬 Zenodo 条款细读与 Barkopedia 系数据许可核对）——必做；②Scientific Data 数据描述论文在审，发表即核（下轮查证是否已发表）；③ICASSP 全文与 5 条引用追踪——顺延不挂账；④《Bark and Howl 1D-CNN》候选——下轮判断价值；⑤窗口起点：本轮仍无"全部计划覆盖"的完整收尾（bioRxiv 全文与 JAVMA 全文持续付费墙/反爬不可得属外因），维持部分完成口径，窗口起点 2026-09-29；若下轮无新增外因阻塞且覆盖完成，可考虑登记成功水位。
+
+---
+
 ## 2026-10-14 · Barkopedia任务口径纠正（非扫描）
 
 - 原口径：10月13日周记／账本及datasets将其称为“个体隔离／跨犬泛化公开基准”。此口径作废，历史记录保留但不得继续引用。
