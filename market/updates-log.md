@@ -4,6 +4,49 @@
 
 ---
 
+## 2026-10-19 · 市场侧每周扫描（第三次定时运行，部分完成）
+
+- 运行：开始 2026-10-19T09:08+08:00；写入开始 2026-10-19T09:41+08:00（锁内 owner.txt）；Git 提交时间戳见导航账本（以 git log 实测为准）。
+  （估计值与实测冲突→写"未知"，保留"约X"即违规）
+- 采集窗口：2026-09-29 ～ 2026-10-19 09:08（上轮部分完成、成功水位未推进，按 AUTOMATION 自同窗口起点补扫）；成功水位：未建立——C 类国内口碑（小红书/抖音）、Indiegogo、M5、招股书金额核对仍积压（见"未完成与下轮承诺"）。
+- 轮换主题：10 月第三周＝App 与猫健康/如厕产品（M3）；上轮结转补查：Bending Spoons 招股书金额、Tractive 提价跟踪、萌小译渠道证据＋众筹原始页、Moonback 官网。
+- 必查项（逐项，禁止先写"全部完成"再列失败）：
+  1. Moonback — 完成 — 检索"Moonback 煦月科技 宠物 官网 AI胸背"（2026-10-19）— 命中 ectimes/希鸥网/宠物网/宠矩网（同稿转载算一个源）；moonback.me 经搜索结果再次实证为西班牙视频营销公司（无关）— 备用入口：无新入口，官网持续缺位
+  2. 萌小译/PettiChat — 完成 — 检索"萌小译 PettiChat 出货 销量 渠道 2026年10月"、"PettiChat Makuake Eleven LLC"、"Traini Kickstarter pet translator collar 2026 backers"（2026-10-19）— 命中海外实体新证据（见入库）；Kickstarter 原始页仍未直接打开，HK$1.14M/882 backers 为 pettichats.com 转述
+  3. Tractive — 完成 — 检索"Tractive subscription price increase Bending Spoons October 2026"（2026-10-19）— 无 Tractive 确认提价新闻（提价报道均为 Evernote 等组合先例）；窗口内重大变化＝伯克希尔追加投资（见入库）；官网价目未重测（2026-10-12 已✅原文核验，本轮无变动线索）
+  4. Whistle — 完成 — 检索"Tractive Whistle device migration transition 2026"（2026-10-19）— 替换窗口 2025-09-30 已关闭、无活跃过渡计划（petgearscore、rottenwifi 一致⚠️二手）；无新迁移信息
+  5. PetPace — 完成 — petpace.com 直接抓取（2026-10-19）— 与 2026-10-12 复查一致（3.0 在售、页面仍无价格、宣称口径不变），无新增
+  6. FluentPet — 完成 — fluent.pet 直接抓取（2026-10-19）— 在售不变（Speak Up!/Connect/Kit Builder、免费 Button Bootcamp、"50M+ presses"/"5,000+ reviews"⚠️自报），无新增
+- 预算顺序自检：必查是否全部完成 是（6/6）；读原文方法节/表格的条目数 无（市场侧无实验方法节可读，非硬性目标）；深查 5/上限5（pettichats.com、aianimalcollar.com 两篇、animalcollar.ai、Sylvester 官方通稿＋商店页、智能猫砂盆导购两篇——均不必凑满，本轮恰为 5）
+- 入库 5/上限6（只设上限，0–2 条亦属正常，不得凑数）：
+  1. **伯克希尔追加投资 Bending Spoons**（2026-10-14 披露）— FT 首报、CNBC 2026-10-17、华尔街见闻/金融界 10-15（⚠️二手权威多源一致）：定向增发 1000 万股、每股 $33、追加 $3.3 亿，累计投资 $9.3 亿、持股约 4%；消息公布当日股价 +41%、市值约 $340 亿。IPO 细节补充：2026-06-30 定价 $29/股、募资约 $1.7B（CNBC⚠️）——与 Q2 公告"净募资 $1.10B✅原文"并存（毛/净口径不调和）。同窗口整合动作：Airtable 约 $13 亿（9-04 交割）、Miro $13.55 亿 EV 宣布（⚠️转述）。为何有价值：云依赖硬件的服务生命周期风险判断再次加重，"收购→裁员→提价"模式获顶级资本背书意味着组合内提价压力只增不减；Tractive 自身仍无确认提价。证据层级：通稿/报道快照级。
+  2. **海外" PettiChat"实体复杂化（口径修正，重大）**— ①美国 Kickstarter 版由 **Traini** 运营（animalcollar.ai/The Underbite⚠️二手：与杭州萌小译同名、同 94.6% 宣传、同 PETTI 模型名，关系"coordinated/licensed/同名"不明❓；Traini 另有 Sentra 健康项圈、CES 2026 AI Hardware 获奖⚠️转述；承诺 Q4 2026 发货、未见交付证据）；②日本 Makuake 版主体标 **Eleven LLC**，上线 10 小时破 100 万日元（ASCII.jp 经 yomimono.id⚠️二手聚合），日语双向音频＋蓝牙定位＋Makuake 买家无月费；③**pettichats.com** 自称官方店：$149（regular $198）、首年免费后 $9.9/月、Kickstarter 2026-04-14～05-14 募 HK$1.14M/882 backers/29x（⚠️转述，身份未确认❓，域名与 pettichat.com.cn 官网并存）；④"两周预订超 1 万台"实为中国版预售口径（aianimalcollar："the 10,000 preorders"指 Meng Xiaoyi 版⚠️listicle），与 Kickstarter 882 backers 属两个市场两套数据——此前混同记录在本条修正。为何有价值：推翻既有"萌小译海外众筹＝杭州萌小译出海"归属；海外品牌名下至少三个实体（杭州萌小译/Traini/Eleven LLC）关系待核，直接影响海外渠道与商标判断。证据层级：二手快照级，无一手众筹页。
+  3. **猫疼痛图像 App 在售格局（M3，Tably/CatsMe 状态升级）**— ①Sylvester.ai：App 现名"Cat Comfort Check"（Google Play，开发者 Sylvester AI Inc 加拿大卡尔加里，更新 2026-09-14，1K+ 下载、应用内购，"20,000+ cats"⚠️自报）；2026-07-21 GLOBE NEWSWIRE✅官方通稿发布 **Connect to Care**——面向兽医诊所的 B2B2C 获客项目（地域广告引流→App 内 Comfort Check→诊所 Practice Portal 查看历史并直接预约）；"38 万+图像已处理""30% 的 Comfort Check 促成就诊、其中 80% 导致诊断/治疗"⚠️CEO 口径无方法。②CatsMe：主体 **Carelogy Inc.**，iOS v4.4.10（2026-07-23 更新，AppBrain 快照），基于 Feline Grimace Scale，"380,000+ cat parents across 50+ countries"⚠️自报，商店评分样本极小（5 评 4.2）。为何有价值：矩阵两行"当前服务待核"解除；猫疼痛图像识别已成 to C＋B2B 兽医渠道双轨商业化，且 Sylvester 公开的使用转化率口径（30%/80%）是同类少有的自报漏斗数据。证据层级：官方通稿＋商店页快照级。
+  4. **PETKIT Purobot Max Pro 2（M3 如厕健康监测主力新品）**— CES 2026 Innovation Award⚠️导购转述；1080p AI 摄像头 210° 视角、猫脸识别多猫区分、尿 pH 试纸集成＋UTI 风险提示、AI 粪便分类（功能宣称⚠️导购：smarthomeexplorer、neodrop）；官方页标价 $465.99（neodrop）/约 $443（smarthomeexplorer）——价格带 $440-470⚠️导购口径；neodrop 转引 WIRED 实测提醒：Care+ 试用结束后 App 有猫识别混淆反馈、摄像头不可转动⚠️转引。为何有价值：矩阵 PETKIT 行从"当前状态待核"部分解除；如厕品类健康监测已成主战场，多猫识别分化为猫脸视觉/RFID+双摄/纯称重三条路线（CATLINK RFID 被评最准、纯称重最弱⚠️导购）。证据层级：导购聚合快照级，无一手评测原文。
+  5. **Moonback 通稿细节补充**— 希鸥网/宠物网/宠矩网/电子商务时报（2026-09 同稿多转载＝一个源⚠️通稿）：投资方将"深度协同、联合研发宠物垂类大模型"；犬 AI 睡眠窝垫用毫米波雷达（静息心率/呼吸/夜间抓痒/睡眠周期），主打中老年犬与短鼻犬高风险族群；"自 2024 年底积累数十万份行为/生理/声音样本、与宠物医院和高校合作补临床数据"⚠️自报（与萌小译"500 万条"为各自独立口径，均无公开测试集）。官网仍缺位。为何有价值：Moonback 行"数字生命档案＋个人基线"路线的落地细节与投资方协同关系（对标 PETKIT/小米生态），官网与独立验证缺口仍是最短板。证据层级：通稿级。
+- 判断变化：①Bending Spoons"整合进行时"升级为"整合获顶级资本背书"（伯克希尔持股 4%），云依赖硬件长期可用性风险分量再加重，Tractive 订阅条款维持最高优先观察；②海外" PettiChat"归属判断作废重立——原"萌小译海外众筹＝杭州公司出海"不能维持，Traini/Eleven LLC/杭州萌小译三者关系待核，海外众筹数据（882 backers）与中国预售数据（1 万+）分市记录；③猫疼痛图像 App 从"服务待核"到"在售＋B2B2C 商业化"（Sylvester 转向兽医渠道获客）；④M3 如厕品类确认健康监测为主战场、多猫识别为核心差异化，PETKIT 行部分解除待核。均未超出本轮证据层级（快照/通稿级）外推。
+- 筛除／存疑：
+  - 筛除：dazhe.com 打折网"CATLINK APP 监测实测"——发布主体"宠物智能设备评测组"身份不明、数字异常精确完整（96.7%/41.2%/±86g/CKD 漏警 66.7%/多猫 92.4% 错归）、导购站、AI 生成嫌疑，不引用其任何数字；gpstrackerreviews.net 与 cuip.org 两家 listicle 把 Whistle 停服/收购年份写成 2026-08-31/2026-07——与已核验事实（2025-08-31 停服、2025-07-28 公告）矛盾，典型二手日期污染，其"2026-09-30 替换窗口"口径不作数。
+  - 存疑：❓pettichats.com 身份（Traini 官方/杭州萌小译海外店/第三方仿冒）；❓Traini 与杭州萌小译关系（同名同 94.6% 同 PETTI 模型名，合作/授权/纯属同名不明）；❓Eleven LLC 与前两者关系；❓"两周预订 1 万+"仍无众筹原始页佐证；❓CNBC IPO 募资 $1.7B 与 Q2 公告净募资 $1.10B 的毛/净口径差（不调和，引用须注明层级）；❓PETLIBRO Luma $599.99、CATLINK Open-X（TWD 7,980 台湾新品）等新品价格均为导购口径。
+- 其他发现（自由填写）：①智能猫砂盆品类价格带 $330-800（CATLINK $329-599、PETLIBRO Luma $599.99、Neakasa M1 Plus $379.99、PETKIT Max Pro 2 $440-470），SiiPet LitterLens（外接摄像头给现有砂盆加粪便视觉分析＋UTI 模式提醒）与 Petivity（兽医开发）为两个新品类观察候选——均⚠️导购口径；②Makuake 对中国宠物硬件出海是有效渠道（Ropet 上线 1 小时破 2700 万日元；PettiChat 10 小时破 100 万日元）——跨品类线索；③LinkedIn 批判帖（betteraitips）把 PettiChat 归为"中国创业公司 Traini 出的"——海外二手内容对该品类归属普遍混乱，引用境外 listicle 须逐条验归属；④aianimalcollar 称中国版萌小译 App 仅中文、音频上传阿里云⚠️listicle 口径未独立核验——出海适配与隐私线索，待更可靠来源；⑤中文圈中移动通稿 10-08 再转发一篇（头条"汪星人日记"），口径与 10-07 通稿一致，同稿转载不计新源。
+- 未入库但值得跟踪的线索：SiiPet LitterLens 与 Petivity Smart Litter Box Monitor（M3 新品类候选，下轮 M3 余量时查官网原文）；PETLIBRO Luma（AI 粪尿分析、Cats.com 4.5/5⚠️导购）；Traini Sentra 项圈（CES 2026 获奖⚠️，健康监测线，与 PetPace 同类）；Apple 次代 AirTag 宠物健康功能传闻（animalcollar.ai 提及⚠️，跨品类）。
+- 深查证据层级自报：5/5；本轮新条目整体层级 元数据级（通稿/导购/商店页快照，无一手原文直读——GLOBE NEWSWIRE 通稿为官方自报原文但非验证材料）。
+- 覆盖（逐条）：
+  - Moonback｜检索"Moonback 煦月科技 宠物 官网 AI胸背"（含日期 2026-10-19，返回上限 5）｜2026-10-19｜发现（通稿细节 4 篇同稿；官网仍无）
+  - 萌小译/PettiChat｜检索"萌小译 PettiChat 出货 销量 渠道 2026年10月"（上限 5）＋"PettiChat Makuake Eleven LLC"（上限 5）＋"Traini Kickstarter pet translator collar 2026 backers"（上限 5）｜2026-10-19｜发现（海外实体新证据；Kickstarter 原始页未直开，转述口径）
+  - Tractive｜检索"Tractive subscription price increase Bending Spoons October 2026"（上限 5）｜2026-10-19｜发现（Berkshire 投资为窗口内重大变化；无确认提价）
+  - Whistle｜检索"Tractive Whistle device migration transition 2026"（上限 5）｜2026-10-19｜发现（替换窗口关闭确认；两家 listicle 日期错误筛除）
+  - PetPace｜petpace.com 直读（抓取全文）｜2026-10-19｜无新增
+  - FluentPet｜fluent.pet 直读（抓取全文）｜2026-10-19｜无新增
+  - 轮换 M3-1｜检索"智能猫砂盆 健康 监测 PETKIT CATLINK 2026 新品 误报 评价"（上限 5）｜2026-10-19｜发现（品类格局，导购级）
+  - 轮换 M3-2｜检索"CatsMe Sylvester.ai Tably cat pain detection app 2026 update"（上限 5）｜2026-10-19｜发现（Sylvester/CatsMe 状态落定）
+  - 失败项备用入口与重试：本轮无访问失败项；PetPace/FluentPet 官网直读一次成功。
+- 未完成与下轮承诺：①C 类国内口碑（小红书/抖音关键词直查）——连续三周未覆盖，承诺 2026-10-26 轮（第四周轮换＝训练/非AI替代/M5 对照）预算内**必做**，平台受限则记访问失败；②Indiegogo 众筹——连续三周未覆盖，承诺 2026-10-26 轮随 D 类一并查一次；③M5 畜牧对照——承诺 2026-10-26 轮按轮换主题执行；④Bending Spoons 招股书原文核 $900M/$119M vs 官方 $115M——连续两轮未做，承诺 2026-10-26 轮预算余量执行，未完成则 11-02 轮必做并考虑降级为低优先（官方 EV $759M✅原文已在库，招股书核对为口径完备性）；⑤企查查深层股权、Amazon 类目榜——维持积压，2026-11 月内至少各执行一次，否则缩减并在 sources.md 注明不再每周挂账。下轮若完成①②③，可按"全部计划覆盖"登记成功水位（窗口起点仍 2026-09-29）。
+- 结论复核：无；本轮不影响 docs/ 或根 README。
+- Git：逐文件提交见导航账本。
+
+---
+
 ## 2026-10-12 · 市场侧每周扫描（第二次定时运行，部分完成）
 
 - 运行：开始约 2026-10-12T09:01+08:00，结束以本轮 Git 提交时间戳为准。采集窗口 2026-09-29 ～ 2026-10-12 09:01——上轮（2026-10-05）部分完成、成功水位未推进，按 AUTOMATION 自同窗口起点补扫。轮换主题：10 月第二周＝公开长期使用、订阅/退货/停服反馈；并执行上轮待办（Bending Spoons 官方披露核金额、萌小译工商与出货证据、Tractive 订阅条款）。登记**部分完成**：Reddit 原帖未直接命中、小红书/抖音未直查、Indiegogo 未查、M3/M5 未覆盖（见覆盖记录）；成功水位不推进，下轮补扫同窗口起点。
