@@ -6,7 +6,7 @@
 
 ## 2026-10-26 · 学术工程侧每周扫描第五次运行（定时任务）
 
-- 运行：开始 2026-10-26 10:06（任务触发后实测；系统时钟 11:06+09:00，等效 +08 口径）；写入开始 2026-10-26 10:32（锁 owner.txt 实测，+08 口径）；Git 提交时间戳：**本轮补笔回填（见下）**——主提交时点尚未存在，不预填。
+- 运行：开始 2026-10-26 10:06（任务触发后实测；系统时钟 11:06+09:00，等效 +08 口径）；写入开始 **2026-10-26 10:18:32（.weekly-write.lock/owner.txt mtime 实测）**——初记"10:32"为未实测估计值、与提交时间戳冲突，按规则作废改记实测；Git 提交时间戳：**2026-10-26T10:22:31+08:00（2793778，git log %cI 原值 11:22:31+09:00，同一时刻的执行环境时区偏移）**。
 - 采集窗口：2026-09-29～2026-10-26 10:06（补扫；前四轮均部分完成、成功水位未建立）；成功水位：**本轮建立**（计划覆盖完成，理由见"未完成与下轮承诺"）。
 - 轮换主题：10 月第四/五周「可取得数据／权重、相关硬件供给和法规」——本轮积压四项正对该主题（数据许可与可取得性）；硬件供给与法规按频率表"仅与当前具体任务直接相关时查"，本轮主任务为数据/模型边界，**未触发（非未覆盖）**。上轮结转补查：17 犬 Zenodo 条款细读（必做）、Sci Data 描述论文查证、ICASSP 全文顺延、《Bark and Howl 1D-CNN》择价值——**四项全部完成**。
 - 必查项（逐项）：
@@ -25,19 +25,19 @@
 - 其他发现（自由填写）：①**ElevenLabs Text to Bark**（文字转犬吠商用合成，官方 blog；经网易转述"独立测试 95% 犬不可区分"⚠️厂商转述级、测试设计未核）——合成数据重点的首个商用信号，实证缺失；②可商用犬声音效库盘点：Pro Sound Effects Canines（648 文件/10.11GB/24bit-192kHz/royalty-free 商用）、Sound Ideas Canine（750 条）等——媒体许可清晰但**无意图/情绪科研标注、个体与情境元数据不齐**；③Mescalina Bark ID 数据库（10.3233/JIFS-169509）可向原作者申请取得——"可取得"科学犬声数据的具体入口（ICASSP 用其 v2017 版 8,034 段）；④Zenodo 记录级 license 字段现状为空——10-22 轮"记录 CC-BY-4.0"应是当时记录元数据，现已无该字段，冲突解决以归档内 README 为准；⑤Salford 博士论文（citizen science 主人拍摄＋主人标注，研究者-主人标签一致度 **98.1%**、不一致项经回看全部修正，方法承 Horowitz & Hecht 2016）——主人确认标注设计的直接先例，全文 PDF 在 Salford repository，值得细读。
 - 未入库但值得跟踪的线索：Salford 博士论文主人标注设计（98.1% 一致度先例）；ElevenLabs Text to Bark 实证状态；DogBridge IPFS 文档归属；ICASSP 论文 5 条引用追踪（归犬吠月查 2026-11 第一周）；Mescalina 申请条件与许可（须联系原作者，本轮未联系）。
 - 深查证据层级自报：4/5；本轮新条目整体层级 **元数据级**（OSF 预印本为 OpenAlex 摘要重建；ICASSP 升级方法节级属存量行升级非新增）。
-- 覆盖（逐条，访问时间 2026-10-26 10:06–10:30 +08）：
-  - Zenodo API｜records/18972388＋files/06 Readme.txt/content（7,021B）｜10:07｜发现（许可冲突解决）
-  - GitHub 主站＋raw｜idiap/ssl-human-animal 页面、LICENSE（404）、LICENSES/、README、CITATION.cff｜10:08｜发现（GPL-3.0-only 落定）
-  - GitHub atom｜idiap/ssl-human-animal/commits/main.atom｜10:08｜发现（最新提交 2026-02-03）
-  - arXiv｜export.arxiv.org id_list=2501.05987＋arxiv.org/html/2501.05987v1（HTTP 200，94KB）｜10:09｜发现（方法节级直读；v2 同存未用）
-  - OpenAlex｜works?title.search:dog play pant（per-page 5）＋works/doi:10.17605/osf.io/98nhd｜10:10｜发现（Sci Data 无条目；OSF 预印本新发现）
-  - HF API｜models/EarthSpeciesProject/NatureLM-audio｜10:10｜发现（无变化）
-  - GitHub atom｜earthspecies/NatureLM-audio/commits/main.atom（9 条目）｜10:10｜发现（#21 新提交）
-  - arXiv API｜all:"synthetic"+all:"dog bark"（max_results 8，submittedDate desc）｜10:21｜1 命中不相关→0 新增（单查询口径）
-  - crossref API｜10.3390/app16136819｜10:21｜发现（1D-CNN 摘要→筛除）
-  - WebSearch｜synthetic dog bark audio generation training data augmentation empirical study bioacoustics｜10:22｜发现（ElevenLabs 信号；无实证研究）
-  - WebSearch｜dog vocalization dataset commercial license purchase bark database｜10:23｜发现（SFX 库盘点）
-  - WebSearch｜pet owner confirmation correction labeling animal behavior data collection design citizen science dog｜10:28｜发现（Salford 论文线索＋DogBridge 存疑）
+- 覆盖（逐条，采集段 2026-10-26 10:06–10:18 +08；逐条时刻无独立日志可验证、一律标未知，仅按先后排序）：
+  - Zenodo API｜records/18972388＋files/06 Readme.txt/content（7,021B）｜未知｜发现（许可冲突解决）
+  - GitHub 主站＋raw｜idiap/ssl-human-animal 页面、LICENSE（404）、LICENSES/、README、CITATION.cff｜未知｜发现（GPL-3.0-only 落定）
+  - GitHub atom｜idiap/ssl-human-animal/commits/main.atom｜未知｜发现（最新提交 2026-02-03）
+  - arXiv｜export.arxiv.org id_list=2501.05987＋arxiv.org/html/2501.05987v1（HTTP 200，94KB）｜未知｜发现（方法节级直读；v2 同存未用）
+  - OpenAlex｜works?title.search:dog play pant（per-page 5）＋works/doi:10.17605/osf.io/98nhd｜未知｜发现（Sci Data 无条目；OSF 预印本新发现）
+  - HF API｜models/EarthSpeciesProject/NatureLM-audio｜未知｜发现（无变化）
+  - GitHub atom｜earthspecies/NatureLM-audio/commits/main.atom（9 条目）｜未知｜发现（#21 新提交）
+  - arXiv API｜all:"synthetic"+all:"dog bark"（max_results 8，submittedDate desc）｜未知｜1 命中不相关→0 新增（单查询口径）
+  - crossref API｜10.3390/app16136819｜未知｜发现（1D-CNN 摘要→筛除）
+  - WebSearch｜synthetic dog bark audio generation training data augmentation empirical study bioacoustics｜未知｜发现（ElevenLabs 信号；无实证研究）
+  - WebSearch｜dog vocalization dataset commercial license purchase bark database｜未知｜发现（SFX 库盘点）
+  - WebSearch｜pet owner confirmation correction labeling animal behavior data collection design citizen science dog｜未知｜发现（Salford 论文线索＋DogBridge 存疑）
   - 失败通道：本轮无（GitHub api 未用直接走主站；arXiv https 直连无 301）。
 - 未完成与下轮承诺（2026-11-02）：①**成功水位建立依据**：每周必查 1/1、积压 4/4、追加重点 4/4（①可采购②开源许可③合成数据④主人确认均以实际查询覆盖）、轮换主题按频率表执行完毕；前四轮外因阻塞项按 2026-10-22 频率表重划——17 犬资源边界已由 Zenodo 原档＋README 原文补齐（预印本全文仅剩背景价值）、JAVMA 全文归疼痛线月查、bioRxiv 全文不再单列——**此为按规则降频，非临时缩减**。下轮采集窗口改为 **2026-10-24～运行时刻**（回溯 2 天），不再补扫 09-29。②轮换回月度第一周「行为／声学及个体外泛化」＋犬吠关键论文月查（含 ICASSP 5 条引用、LREC 10.63317 引用增量）。③按钮线月查＋主人确认与纠正设计专项（Salford 论文细读优先，正对晶晶追加重点④）。④Mescalina 申请条件与许可（须联系原作者，安排在按钮线轮次）。⑤Sci Data 描述论文发表即核（不挂账）。
 
