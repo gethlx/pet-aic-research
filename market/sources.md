@@ -46,9 +46,10 @@
 
 ## 候选信源（待验证，暂不作为常规扫描源）
 
-- [pettichats.com](https://pettichats.com/product)：自称"PettiChat 官方店"（多 s 域名，与萌小译官网 pettichat.com.cn 并存）。2026-10-19 首轮使用：海外预售 $149＋首年免费后 $9.9/月、Kickstarter 2026-04-14～05-14 募 HK$1.14M/882 backers/29x、Q4 2026 发货。**身份未确认❓**（Traini 官方/杭州萌小译海外店/第三方仿冒不明），引用其数字须标注"自称官方、身份未核"。
+- [pettichats.com](https://pettichats.com/product)：自称"PettiChat 官方店"（多 s 域名，与萌小译官网 pettichat.com.cn 并存；首页自述"Built by Meng Xiaoyi, a Hangzhou-based startup"，2026-10-26）。2026-10-19 首轮使用：海外预售 $149＋首年免费后 $9.9/月、Kickstarter 2026-04-14～05-14 募 HK$1.14M/882 backers/29x、Q4 2026 发货。2026-10-26 复核：**Kickstarter 终值 HK$1,221,069/$155,701✅原始页直读**（该站 HK$1.14M/29x 为旧快照）；店铺运营实体仍无 imprint❓，引用其数字须标注"自称官方、实体未核"。
 - [ASCII.jp（经 yomimono.id 聚合）](https://yomimono.id/pettichat-pets-ai-translator-tops-1-million-yen-on-makuake-in-10-hours)：日本众筹动态报道源。2026-10-19 佐证 PettiChat Makuake 版（主体标 Eleven LLC）上线 10 小时破 100 万日元；聚合转载非一手，Makuake 原始项目页待直开。
-- animalcollar.ai / aianimalcollar.com listicle 家族：**降权使用**——两站为关联导购站（"sister site"互链），2026-10-19 提供海外"PettiChat"实体混淆的关键线索（Traini vs 杭州萌小译 vs Eleven LLC），但多篇日期/归属自相矛盾（如把 Whistle 停服写成 2026-08-31 的同类站不止一家）。仅取可交叉的方向线索，任何数字与日期须回一手来源。
+- animalcollar.ai / aianimalcollar.com listicle 家族：**降权使用——2026-10-26 其核心论断被一手页面推翻**：两站称"美国 Kickstarter 版由 Traini 运营"，但 KS 原始页 creator 显示"by PettiChat"、全文无 Traini 字样✅直读；aixploria 转述法媒称 Traini 是资金支持方⚠️。两站仍可取方向线索（实体混淆史本身是信号），任何归属/数字/日期须回一手来源，归属类论断不再单独采信。
+- [南方英文网 newsgd.com](https://www.newsgd.com/)：广东官方英文媒体。2026-10-26 首轮使用：OurenPet Ouren M1 上线 Indiegogo（2026-09-15～10-31）通稿——出海硬件众筹的权威线索源（官方媒体口径，仍为通稿级）；候选一轮后决定是否转正。
 
 - [Bending Spoons IR](https://investors.bendingspoons.com/)：上市公司业绩与收购披露官方入口。2026-10-12 首轮验证：Q2 2026 公告页✅（Nasdaq: BSP、Tractive 列主业务）且业绩 PDF✅原文直读（Tractive EV $759M 含 $115M 递延、IPO 净募资 $1.10B）。Tractive 相关商业事件的权威披露源，下轮可转正 B 类。
 - [亿欧数据企业库](https://data.iyiou.com/)：企业主体/融资结构化档案。2026-10-12 首轮验证：Moonback 主体（深圳煦月，2026-01-22 成立）条目完整；条目级可靠，非工商原始登记，深层股权仍需企查查/天眼查。下轮可转正 B 类。
@@ -60,8 +61,8 @@
 
 ## 每周重点与轮换（执行方法以AUTOMATION为准）
 
-- 每周必查：Moonback／萌小译的原公告及具体产品状态（Moonback 官网截至 2026-10-19 仍未找到，moonback.me 为无关西班牙公司已排除；萌小译工商已核✅企查查 2026-10-12，出货存在预售 1 万／出货 2 万／销售 1.2 万三口径矛盾且海外众筹数据分市（882 backers），继续找渠道证据与众筹原始页）；[Tractive](https://tractive.com)当前状态（含 Bending Spoons 收购后订阅条款与提价动向，官方披露经 Bending Spoons IR；2026-10-19 核查无确认提价，伯克希尔 10-14 追加投资为组合层面重大变化）；[Whistle停服公告](https://www.whistle.com/blogs/news/whistle-joins-the-tractive-family)原 URL 已重定向至 Tractive 官网（2026-10-12 实证），替换窗口 2025-09-30 已关闭、无活跃过渡计划（2026-10-19 二手多源一致）；[PetPace](https://petpace.com)（2026-10-19 复查无变化）；[FluentPet](https://fluent.pet)（2026-10-19 复查无变化）。产品销售、服务条款和价格须对应地区及型号。
-- 2026-10-22 起追加重点（晶晶已确认，细节见 [下周调研要求](../docs/方向调研/2026-10-22-宠物组讨论结论与下周调研要求.md#四下周调研重点2026-10-26-那一轮起执行)）：以一手页面核实 PettiChat 海外主体（Traini、杭州皮皮窝/萌小译、Eleven LLC）；留意竞品公开的训练数据来源或数据合作。
+- 每周必查：Moonback／萌小译的原公告及具体产品状态（Moonback 官网截至 2026-10-26 仍未找到（连续第五周），moonback.me 为无关西班牙公司已排除；萌小译工商已核✅企查查 2026-10-12，出货四口径并存（预售 1 万/出货 2 万/销售 1.2 万/月预售 2 万）且海外众筹数据分市：Kickstarter 募资 HK$1,221,069✅原始页直读 2026-10-26、Makuake 原始页仍未直开❓）；[Tractive](https://tractive.com)当前状态（含 Bending Spoons 收购后订阅条款与提价动向，官方披露经 Bending Spoons IR＋SEC F-1/A；2026-10-26 核查无确认提价、条款原文已核）；[Whistle停服公告](https://www.whistle.com/pages/app)官方过渡页可达✅（2026-10-26 直读：app 2025-08-31 停用、替换优惠 2025-09-30 截止，无活跃过渡计划）；[PetPace](https://petpace.com)（2026-10-26 复查无变化）；[FluentPet](https://fluent.pet)（2026-10-26 复查无变化）。产品销售、服务条款和价格须对应地区及型号。
+- 2026-10-22 起追加重点（晶晶已确认，细节见 [下周调研要求](../docs/方向调研/2026-10-22-宠物组讨论结论与下周调研要求.md#四下周调研重点2026-10-26-那一轮起执行)）：以一手页面核实 PettiChat 海外主体（Traini、杭州皮皮窝/萌小译、Eleven LLC）；留意竞品公开的训练数据来源或数据合作。**进度 2026-10-26**：Kickstarter 原始页✅直开（creator="by PettiChat"、Traini 降级为投资方❓）、pettichats.com 自述 Built by Meng Xiaoyi、萌小译自引 DogSpeak 公开数据集作基准（36氪欧洲⚠️）——三者关系与 Makuake 版 Eleven LLC 原始页仍未一手核实❓（下轮以 ASCII.jp 原文为补查入口）。
 - **频率表（2026-10-22 采纳[下一期调研改动建议](../reports/2026-10-22-下一期调研改动建议.md) §5）**：国内家庭需求证据、直接竞品关键变化＝本期主任务（有新证据优先核）；融资、股权、招股书细枝末节——降级（仅在影响价格、服务、产品存续或既有结论时优先核）；猫健康／如厕产品按月度轮换；硬件供给与认证仅在与当前具体任务相关时查。降频≠删除——旧积压（C 类国内口碑、Indiegogo、M5 等）保留出处与处理状态，不得事后缩减计划以宣布完整成功。
 - 每月第一周：融资／工商和行业媒体；第二周：公开长期使用、订阅／退货／停服反馈；第三周：App与猫健康／如厕产品；第四周及第五周：训练、非AI替代与M5对照。展会／众筹在相关窗口加入，不机械每周扫全年展会。
 - 每轮先执行重点，余下预算再做轮换。每个来源在周记写实际URL／检索式、窗口、访问结果；搜索摘要不是读过全文。登录受限、付费墙和空检索分别记状态，不当无新增。
