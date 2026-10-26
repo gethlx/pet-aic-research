@@ -4,6 +4,30 @@
 
 ---
 
+## 2026-10-26 · 临时修补轮（手动触发，非定时）
+
+- 运行：开始 2026-10-26 13:47（系统时间 Asia/Tokyo +09:00；+08 口径 12:47）；写入开始 **2026-10-26 13:58（锁 owner.txt 实测）**；Git 提交时间戳：待本批提交后实测补记。
+- 采集窗口：不适用（修补轮非增量扫描）；成功水位：**不建立**。
+- 轮换主题：无；任务＝修补余项＋主任务第一刀（主公 2026-10-26 裁示："三件事按建议处理，然后临时重跑一轮"）。
+- 必查项（逐项）：
+  1. Salford 论文定位 — **访问失败**（salford-repository.worktribe.com 403 Cloudflare）— 备用入口下轮换 EThOS／Scholar — 维持待核，不阻塞方向
+  2. Zenodo 17 犬许可第三源 — **完成** — DataCite DOI 登记 rightsList＝CC BY 4.0，与 Zenodo API 一致（平台层双源）对 README CC BY-NC 4.0（作者层单源）；**冲突仍在**，重心偏平台层，继续按最保守 NC
+  3. Zenodo 归档内 LICENSE 文件 — **完成** — 7 文件清单复核无 LICENSE 文件（README 为归档内唯一许可声明）
+  4. OSF 98nhd creators 字段 — **完成** — DataCite 直读：Shelly Volsche、Veronika Keeton、Shea Cobb、Macie Dirickson、Sydney Schultz、**Alexandra Horowitz、Holly Root-Gutteridge**、Vanessa Grenier、Sky Sobol；resourceType＝Project 确认（团队归属由"待核"落定）
+  5. 10-26 轮商业数字抽查 — **部分完成** — Kickstarter 原始页 403，HK$1,221,069 维持"扫描自报原始页直读"待独立复核
+- 预算顺序自检：修补 5 项中 3 完成／1 访问失败／1 部分；读原文方法节 **1**（arXiv 2610.21011 全文方法节＋结果）；深查 3/上限5（Mendeley 数据卡＋DataCite、arXiv 全文、GitHub repo；不凑满）
+- 入库 **2**/上限6（只设上限，0–2 亦属正常，未凑数）：
+  1. [Audio-Visual Dog Identification and Tracking in Real-World Videos](https://arxiv.org/abs/2610.21011)（arXiv 2026-10-14 预印本，CC BY-NC-SA 4.0）— 数字口径：46 真实视频／**213 吠声事件**；定位 61.83%（IoU≥0.30）、可见/画外 F1 91.33%、多犬 top-1 73.3%、开放集已知犬 65.36%／EER 12.47%（5 条注册吠声）— 证据层级：**方法节级** — 为何有价值：真实多犬场景个体归因首个基准，开放集未见犬识别直对跨个体问题；能力边界如实偏低恰是"家庭应用尚远"的硬数据
+  2. [犬情绪音视频数据集](https://doi.org/10.17632/5g5hg9hrkv)（Mendeley 2026-09-26，v2）— 数字口径：约 **127 条音视频**、4 情绪类、**独立犬数未知** — 证据层级：数据卡＋DataCite 级 — 为何有价值：真实场景音视频犬情绪少数候选；但规模小、无个体标注、许可单源待核
+- 判断变化：①"家庭视频／多模态无基准"判断**松动**——存在真实多犬视频个体归因基准（46 视频级，能力有限但可测、可复现）；②音视频犬情绪真实数据存在但规模小（127 条）且许可紧（ND 待核）；③ACL2 组研究面由声音扩展至音视频追踪（Dog2vec／Barkopedia 同门，归并）。
+- 筛除／存疑：Mendeley 描述"unlabelled recordings"与"emotions assigned"表述矛盾待核；Kickstarter 金额独立复核未果。
+- 其他发现（自由填写）：①GitHub API 本轮 HTTP 000（网络层失败），raw 入口可用但无 LICENSE 文件——**第三处"无根 LICENSE"模式**（idiap、dog_av_id_tracking 同款），考虑在 VETTING 双源行补"无根 LICENSE 时查 LICENSES/ 目录"（待评估）；②下轮视频线候选：SuperAnimal 姿态模型（Nature Comm 2024，10.1038/s41467-024-48792-2）、SyDog-Video（IJCV 2023 合成视频时序姿态）、行为视频摘要（Sensors 2023）。
+- 深查证据层级自报：3/5；本轮新条目整体层级 **混合（1 条方法节级、1 条数据卡级）**。
+- 覆盖（逐条）：OpenAlex 4 查询｜`dog behavior video recognition`／`canine multimodal behavior dataset`／`dog video temporal behavior analysis`／`dog pose estimation behavior video`（filter from 2019，per-page 8）｜发现（19227/1551/12629/3655 命中，筛后 2 入库）；DataCite｜`dois/10.5281/zenodo.18972388`、`dois/10.17632/5g5hg9hrkv`、`dois/10.17605/osf.io/98nhd`｜发现（许可双源＋creators）；Mendeley API｜`datasets/5g5hg9hrkv`＋`/files`｜发现；arXiv｜`abs/2610.21011`＋`html/2610.21011v1`｜发现（方法节级）；GitHub API｜`repos/UTA-ACL2/dog_av_id_tracking`＋`contents/`｜**访问失败（HTTP 000）**→raw 备用入口成功但 `LICENSE` 404、README 无许可行→**许可待核**；Salford repository｜**访问失败（403）**；Kickstarter｜**访问失败（403）**
+- 未完成与下轮承诺（2026-11-02）：Salford 原文定位（换 EThOS／Scholar 入口）；Kickstarter 金额独立复核；dog_av_id_tracking 许可（查 LICENSES/ 目录或 README 更新）；Mendeley 数据卡页面许可行第二源；SuperAnimal／SyDog-Video 候选读方法节；市场侧主任务（国内狗主真实事件）按计划 §3 执行。
+
+---
+
 ## 2026-10-26 · GPT 评审纠错落地（非定时扫描）
 
 - 性质：GPT（Codex）本期评审报告（[reports/2026-10-26-本期调研评审报告.md](../reports/2026-10-26-本期调研评审报告.md)）列五条纠正＋完成状态复核；军师对三条优先项**独立复核属实**（Zenodo API 双字段＋README 原文、DataCite 体裁、ElevenLabs 原文日期与措辞）后落地。历史周记不回改，被本节取代的口径不得继续引用。
