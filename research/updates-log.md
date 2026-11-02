@@ -4,6 +4,46 @@
 
 ---
 
+## 2026-11-02 · AIC 学术工程侧每周扫描第六次运行（定时任务）
+
+- 运行：开始 **2026-11-02T10:11:31+0900**（date实测；执行环境时区UTC+9，等效+08口径09:11:31）；写入开始 **2026-11-02T10:16:19+0900**（.weekly-write.lock/owner.txt实测，+08口径09:16:19）；Git提交时间戳 **提交后补笔回填**（写入时提交尚不存在，不预填）。
+- 采集窗口：**2026-09-29～2026-11-02 10:11（+08/本地口径见上，补扫）**；成功水位：**本轮建立**（计划覆盖完成并收尾，理由见"未完成与下轮承诺"）。窗口起点说明：10-26扫描原登记"建立"后被GPT纠错**回调为未建立**（[纠错节](#2026-10-26--gpt-评审纠错落地非定时扫描)⑥），按AUTOMATION"部分扫描不推进水位"与[计划§2](../reports/2026-10-26-下一期调研方案计划.md)（"11-02增量窗口仍按AUTOMATION与周记有效水位计算"），窗口起点维持**2026-09-29**补扫；automation运行记忆所写"2026-10-24"系纠错前口径，以仓库有效水位为准。
+- 轮换主题：**11月第一周「行为／声学及个体外泛化」**（正对本轮主任务的隔离/泛化问题）＋犬吠论文月查（LREC 10.63317增量、ICASSP引用）。上轮结转补查：按钮线月查＋主人确认设计专项（Salford细读）；Mescalina申请条件与许可；Sci Data发表即核——四项均按计划§2预设条款处理完毕（Salford留观察，见必查项与未完成节）。
+- 必查项（逐项，禁止先写"全部完成"再列失败）：
+  1. NatureLM repo＋权重卡（每周必查）— **完成** — HF API `models/EarthSpeciesProject/NatureLM-audio`＋`github.com/earthspecies/NatureLM-audio/commits/main.atom`＋commit.diff＋tags页 — 备用入口：GitHub REST releases API本轮429限流，改用commit.diff/tags成功 — 权重卡无变化（lastModified 2025-09-09、cc-by-nc-sa-4.0、下载348）；main窗口内两笔：#22（2026-10-29）依赖告警清理（自述lock-only）、**#20（2026-11-01）v1.1.0版本号跳变（diff仅pyproject/uv.lock，非模型/权重/许可变化）**
+  2. 本期主任务：家庭视频、时序与多模态能力 — **完成** — 检索组合`dog behavior video recognition`／`canine multimodal behavior dataset`／`dog video temporal analysis cross-subject`＋HF/arXiv/OpenAlex/Scholar（**未只检索dog bark**）— 发现4条直接相关资源（3入库＋1存疑），核心四问（自动触发/事件区间/注册负担/跨会话家庭）均有针对性答案或缺口说明，详见判断变化
+  3. 犬吠论文月查·LREC 10.63317/3fjpkdcjtvyx 引用增量 — **完成（无增量）** — OpenAlex `works/https://doi.org/10.63317/3fjpkdcjtvyx`＋`filter=cites:W7131856971` — 仍为2条（ICASSP 2025＋EmotionalCanines ACM MM 2025），与10-19一致
+  4. 犬吠论文月查·ICASSP 2025（10.1109/icassp49660.2025.10889684）引用 — **完成** — OpenAlex `filter=cites:W4408355056` — cited_by_count=5、列表得4条（家禽综述Sensors 2025-06、BioSEN与Multi-Layer Attentive Probing两篇ICASSP 2026-04-21、奶牛跨场可靠性SSRN 2026-01）——均为生物声学方法参照，无犬猫家庭任务新增
+  5. 按钮线月查 — **完成** — OpenAlex `soundboard dog button`（from 2026-06-01，per-page 10）— 2条命中：Wayenberg框架（已收录）＋《Why Anthropologists Should Study Dogs》（Evolutionary Anthropology 2026-10-14，背景评论，不入库）——窗口内无新按钮实验研究
+  6. 主人确认设计专项（Salford论文细读）— **访问失败／未定位** — WebSearch（Salford PhD thesis owner annotations citizen science play）＋OpenAlex `Salford dog owner annotation play pant`（0命中）＋salford-repository.worktribe.com 此前403 — 备用入口EThOS/Scholar本轮换查仍未定位到该博士论文 — **按计划§2预设条款"仍无则继续留观察"执行，降为低频观察**；主人偏差研究方法参照改用CREMD等已可定位文献
+  7. Sci Data描述论文发表即核 — **完成（仍未发表）** — OpenAlex `search=dog play pant`（per-page 8）— 前两位仍为Zenodo记录＋OSF项目，无Scientific Data条目；维持"托管页自述在审、OpenAlex未定位到发表条目"两分列
+  8. Mescalina申请条件与许可 — **完成（公开渠道无条款）** — crossref `10.3233/JIFS-169509`（Mescalina原文＝Pérez-Espinosa等"Automatic individual dog recognition based on the acoustic properties of its barks"，JIFS）— 公开元数据无许可/申请条款；**未联系原作者**（未获授权），维持"可向作者申请"路径标注
+  9. 月度轮换「行为／声学及个体外泛化」— **完成** — 由主任务视频基准的隔离设计核查（K9-Bench/Pawgaze均无犬ID→无个体隔离）＋ICASSP引用中的跨场/迁移方法文献（奶牛跨场可靠性、Attentive Probing）覆盖
+  10. 晶晶追加重点余量快扫（①可采购意图数据②合成数据实证）— **完成（维持原结论）** — WebSearch `dog intent behavior labeled dataset purchase commercial license owner confirmation`（0相关命中，单查询口径）＋`synthetic dog bark vocalization data augmentation empirical evaluation`（0犬合成实证命中；命中大鼠超声合成训练数据JASA 2024，跨物种方法参照）— 可采购意图标注犬声/行为数据仍**未定位到**；合成数据仍无犬实证研究
+- 预算顺序自检：必查是否全部完成 **是**（10项中9完成、1项按预设条款降为留观察）；读原文方法节／表格的条目数 **1**（K9-Bench arXiv HTML §3＋附录A/B＋结果表部分；Pawgaze/InterPet4D无方法节可读——前者workshop摘要级、后者论文未定位）；深查 **5**/上限5（K9-Bench、Pawgaze、InterPet4D、Sounds of Play、DogMo；不超）
+- 入库 **5**/上限6（只设上限，宁缺毋滥；5条均为改变主任务资源地图或窗口内新证据，未凑数）：
+  1. [K9-Bench](https://arxiv.org/abs/2607.02680)（arXiv 2026-07-02预印本，论文CC BY 4.0；数据HF CC BY-NC 4.0）— 数字口径：**923视频**（附录；摘要另写907待核）／**4,744条QA**（HF实际；摘要"约5,000"）／5类任务；独立犬数未知 — 证据层级：**方法节级** — 为何有价值：家庭视频理解首批公开基准，直接量化"MLLM能看懂多少犬行为视频"（约40%量级），负向结果本身改变"多模态已可用"的任何乐观假设
+  2. [Pawgaze](https://neurips.cc/virtual/2025/131537)（NeurIPS 2025 Workshop投稿；HF无许可声明）— 数字口径：1,929收集→**923精选视频**／**7,120 MCQ**（HF卡一致）；独立犬数未知 — 证据层级：摘要＋数据卡级 — 为何有价值：第二个犬视频理解基准，专家参与QA设计（对比K9-Bench纯VLM流水线），workshop层级如实下调
+  3. [InterPet4D](https://huggingface.co/datasets/ohicarip/interpet4d)（HF v1.1，2026-10-07，**窗口内**；CC BY-NC 4.0）— 数字口径：**113场次／13犬／约23人／227段ego片段**（HF卡）；媒体稿161场次/683万帧**口径不一致待核** — 证据层级：数据卡级（论文未定位）— 为何有价值：人宠交互4D多模态（音频＋SMPL-X/MANO/SMAL）首个公开规模资源，正对声画对齐与时序交互；13犬受控采集
+  4. [The Sounds of Play](https://doi.org/10.2139/ssrn.7612027)（SSRN 2026-10-16登记，**窗口内**；posted-content待评审）— 数字口径：三类人犬游戏发声画像；**样本量/独立犬数未知**（全文未读）— 证据层级：元数据＋摘要级 — 为何有价值：ELTE系play pant线首个发声画像结果（喘气最常见），描述性旁证；与17犬数据集是否同一采集未知
+  5. [DogMo](https://arxiv.org/abs/2510.24117)（arXiv 2025-10-28；窗口外补入）— 数字口径：**1.2k运动序列／10只犬**；四设定运动恢复基准 — 证据层级：摘要级 — 为何有价值：犬4D运动恢复多视角RGB-D资源，补上视频/运动地图一角（10犬规模小、无行为标签）
+- 判断变化：①**"家庭视频／多模态基准稀缺"判断大幅改写**——已存在两个犬视频MLLM理解基准（K9-Bench／Pawgaze，各约900视频级）＋人宠交互4D数据集（InterPet4D）＋犬运动4D数据集（DogMo），视频侧资源地图由"几乎空白"变为"有基准、但全是YouTube或受控短采集、无家庭连续监控"；②**MLLM犬视频理解能力实测有限**（K9-Bench方法节级：MC约40%量级 vs 五选一随机20%）——"用现成多模态大模型直接理解家庭犬行为"路线短期不可行的硬证据；③**主任务核心四问全部指向缺口**：无一资源测过连续录像自动触发、依赖预先给定区间或QA切片、均无注册负担/跨会话/跨家庭隔离设计（K9-Bench/Pawgaze无犬ID）；④play pant线获得同团队描述性旁证（游戏喘气高频），"play pant"假说仍未获实验验证；⑤NatureLM无模型层变化（v1.1.0纯版本号），权重CC-BY-NC-SA-4.0边界不变。
+- 筛除／存疑：①Kaggle"Real-World Dog Behavior Videos"（64段顶置单犬无标签，CC0）——单犬、无标注，对跨犬/家庭问题无判断价值，不入库；其中文镜像7zcode（张家梁/Bob 2026-09-23）为同一数据转传，按镜像筛除；②`hxu028/interpet4d-auto-label`（2026-10-29）第三方衍生再上传、无许可声明——沿Barkopedia再上传先例仅存疑；③UMich AI Lab新闻页提及Mihalcea系"犬吠玩乐/攻击性识别"工具（搜索摘要标6天前）——页面JS渲染未直读正文，疑为既有工作新闻覆盖，存疑不入库；④《Why Anthropologists Should Study Dogs》（2026-10-14）背景评论不入库。
+- 其他发现（自由填写）：①**合成训练数据跨物种先例**：大鼠超声发声合成训练数据做监督分类（JASA 2024，Jack/Bilkey）——晶晶"合成数据实证"重点的最接近方法参照（非犬、非独立真实测试集设计待核），值得下轮判断是否升级跟踪；②K9-Bench的VLM视频过滤代理（Gemini-2.0-Flash与人工拒绝一致率84.3%）可借鉴为低标注成本数据筛选手段；③GitHub REST API连续第二轮限流（429/403），主站atom/commit.diff/raw通道依旧可用——依赖备用入口的模式已五轮稳定；④三个新基准/数据集的许可呈现呈三种状态（K9双源NC一致、Pawgaze无声明、InterPet4D卡内一致但无独立LICENSE），印证VETTING双源规则必要性。
+- 未入库但值得跟踪的线索：BehaviorVLM（arXiv 2603.12176，VLM引导姿态+行为理解，量子点标注系实验动物，犬适用性未知）；《Learning When to Look》（arXiv 2603.07279，关键点-视频按需融合）；Pawgaze结果表分数与失败案例分析；InterPet4D论文/InterPetMoGen正式出处；Sounds of Play全文（样本量、与17犬数据集关系）；K9-Bench 907 vs 923 视频口径差。
+- 深查证据层级自报：**5**/5；本轮新条目整体层级 **混合（1条方法节级、2条数据卡级、1条摘要＋数据卡级、1条摘要级）**。
+- 覆盖（逐条；采集段约2026-11-02 10:11–10:18 +09，逐条时刻无独立日志的标未知）：
+  - WebSearch｜`dog behavior video recognition dataset 2026`／`canine multimodal behavior dataset dog video audio`／`Pawgaze benchmark canine behavior NeurIPS 2025 arXiv`／`Salford PhD thesis dog owner annotations citizen science`／`synthetic dog bark vocalization data augmentation empirical evaluation`／`dog intent behavior labeled dataset purchase commercial license owner confirmation`｜2026-11-02｜发现（主任务4条＋Salford未定位＋合成/采购无犬命中）
+  - arXiv｜`abs/2607.02680`＋`html/2607.02680v1`（§3、附录A/B、结果表）＋`abs/2510.24117`＋`abs/2603.12176`＋export API `all:InterPet4D`／`all:InterPetMoGen`（0命中）｜2026-11-02｜发现（K9方法节级、DogMo/BehaviorVLM摘要级、InterPet4D论文未定位）
+  - Hugging Face API｜`models/EarthSpeciesProject/NatureLM-audio`、`datasets/K9Bench/K9Bench`＋README、`datasets/pawgaze/pawgaze`＋README、`datasets/ohicarip/interpet4d`＋README、`datasets/hxu028/interpet4d-auto-label`、`datasets?search=InterPet`｜2026-11-02｜发现（三数据卡＋NatureLM复查）
+  - GitHub｜`earthspecies/NatureLM-audio/commits/main.atom`、`commit/a4c65ad.diff`、`tags`页、`releases`页｜2026-11-02｜发现（v1.1.0定性）；REST `releases` API **访问失败（429限流）**→commit.diff＋tags备用成功
+  - OpenAlex｜LREC DOI引用（cites:W7131856971）／ICASSP引用（cites:W4408355056）／`search=dog play pant`（per-page 8）／`soundboard dog button`（from 2026-06-01）／`Salford dog owner annotation play pant`（0命中）｜2026-11-02｜发现（LREC无增量、ICASSP 4条引用、Sci Data仍无、按钮2条、Salford未定位）
+  - crossref｜`10.2139/ssrn.7612027`（Sounds of Play元数据＋摘要，二次抓取空返回）／`10.3233/JIFS-169509`（Mescalina）｜2026-11-02｜发现
+  - NeurIPS virtual｜`virtual/2025/131537`（Pawgaze，经搜索摘要呈现）｜2026-11-02｜发现（workshop投稿页）
+  - UMich AI Lab news页｜`ai.engin.umich.edu/news/`｜2026-11-02｜**访问失败（JS渲染无正文）**→不以搜索摘要入库
+- 失败项的备用入口与重试：Salford——repository 403（上轮）→本轮EThOS/Scholar/OpenAlex换入口仍未定位，按计划降为留观察；GitHub REST——429→atom/commit.diff/tags成功；crossref SSRN二次抓取空返回→已用首次摘要结果入库并标全文未读。
+- 未完成与下轮承诺（2026-11-09）：①Sounds of Play全文获取（样本量、标注、与17犬数据集关系）——SSRN页或期刊后续；②Pawgaze结果表分数直读＋HF许可声明寻找；③InterPet4D论文/项目页定位（作者主页、CMU/Science Tokyo实验室）；④K9-Bench 907 vs 923口径核对（读附录表6/7）；⑤Salford维持低频观察（不再每周挂账，有新入口或直接使用需要时再试）；⑥合成数据跨物种先例（大鼠USV）判断是否升级；⑦主任务续：家庭连续监控/自动事件触发方向的专项检索（本轮四问缺口无人填补，下轮定向搜`dog activity recognition continuous video home`／`pet camera event detection`类）。
+
 ## 2026-10-26 · 补做材料校订与计划收拢（GPT/Codex，非扫描）
 
 - 对象：PR #17 `0570222`、main `41c1299`中的资源结论；按用户要求本地修订，不建立成功水位。
