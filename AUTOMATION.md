@@ -4,10 +4,12 @@
 
 ## 调度与职责
 
-| 任务 | 时间（Asia/Shanghai） | 写入范围 | 提交信息 |
+| 任务 | 时间（Asia/Tokyo） | 写入范围 | 提交信息 |
 |---|---|---|---|
 | AIC 市场侧每周扫描 | 周一 09:00 | market/ ＋ 导航账本.md | weekly-market: YYYY-MM-DD |
 | AIC 学术工程侧每周扫描 | 周一 10:00 | research/ ＋ 导航账本.md | weekly-research: YYYY-MM-DD |
+
+时区：2026-11-02 起统一为 Asia/Tokyo（此前约定为 Asia/Shanghai）。WorkBuddy 平台规则只记"周一 9 点／10 点"、不带时区字段，按运行 Mac 的系统时区解释；Mac 改时区会改变实际触发时刻，需同步核对本表（核查经过见导航账本 2026-11-02 条）。
 
 本地 `/Users/larry/PET/pet-aic-research`；远程 `git@github.com:gethlx/pet-aic-research.git`；分支 main。两个任务采集独立，但共用工作目录与账本；错峰不保证写入互不重叠。
 
