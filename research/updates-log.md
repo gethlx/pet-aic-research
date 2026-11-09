@@ -4,6 +4,42 @@
 
 ---
 
+## 2026-11-09 · AIC 学术工程侧每周扫描第七次运行（定时任务）
+
+- 运行：开始 **2026-11-09T10:04:03+0900**（date实测）；写入开始 **2026-11-09T10:20:32+0900**（.weekly-write.lock/owner.txt创建时刻，date＋stat实测；创建时曾误填估计值10:58，与实测冲突当场作废改实测）；Git提交时间戳 **提交后补笔回填**（本行占位，以提交后git log %cI实测为准，防时间戳冲突复发）。
+- 采集窗口：**2026-10-31～2026-11-09 10:04**（自上轮完整成功扫描2026-11-02 10:11回溯2天）；成功水位：**不推进（部分完成）**——结转项Sounds of Play全文受SSRN注册墙阻塞（样本量/与17犬关系未取得），按"部分扫描不推进水位"，下轮窗口起点维持**2026-10-31**补扫。
+- 轮换主题：**11月第二周「按钮、认知、反向训练与负面结果」**；上轮结转补查：Sounds of Play全文、Pawgaze分数表＋许可、InterPet4D论文定位、K9-Bench 907 vs 923口径、主任务连续监控/自动事件触发专项、合成数据大鼠USV择值。
+- 必查项（逐项，禁止先写"全部完成"再列失败）：
+  1. NatureLM repo＋权重卡（每周必查）— **完成** — HF API `models/EarthSpeciesProject/NatureLM-audio`＋`github.com/earthspecies/NatureLM-audio/commits/main.atom` — 备用入口：本轮atom主站通道直接可用（连续第6次）— 权重卡无变化（lastModified 2025-09-09、cc-by-nc-sa-4.0、下载650）；main窗口内（10-31起）无新提交（最新#20 v1.1.0系11-01，上轮已定性纯版本号跳变）
+  2. 本期主任务：连续事件发现、误报／漏报评估、跨会话／家庭证据、简单基线对照 — **完成（检索覆盖真实，主结果为缺口确认＋1条负面结果）** — OpenAlex×13查询＋arXiv×5＋S2×2（429失败）＋WebSearch×5＋HF API×3 — 入库1条误报/泛化负面结果（Martvel Sci Rep）；**核心四问（连续自动触发/事件区间/注册负担/跨家庭）本轮专项检索仍未定位到覆盖研究**（S2两查询429属通道失败，已换OpenAlex/arXiv同类查询补齐，备用成功）
+  3. 结转·Sounds of Play全文获取（样本量、标注、与17犬关系）— **访问失败** — SSRN原文页✅直读（`papers.ssrn.com/sol3/papers.cfm?abstract_id=7612027`，经WebFetch通道得26页/完整作者/摘要全文）；**PDF全文＝注册墙**（"Sign in to Access Cell Press Sneak Peek"；curl的Delivery.cfm与Data_Integrity_Notice均403）— 备用入口两通道均阻塞，按规则不注册绕过；样本量/与17犬关系仍未知
+  4. 结转·Pawgaze结果表分数＋许可 — **完成** — [OpenReview PDF](https://openreview.net/attachment?id=6DxxI05WSk&name=pdf)＋HF API＋README — Table 2直读（Gemini-2.0-Flash总分61.07% vs GPT-4o 56.07%，五选一随机20%）；许可双查（cardData空＋README无声明）一致"未见许可声明"
+  5. 结转·InterPet4D论文/出处定位 — **完成** — arXiv `abs/2607.10287`＋Google Scholar作者页＋HF README — **ECCV 2026正式发表（437–454）**确认；arXiv摘要直读6.8M帧/13犬/11品种/23人、InterPetMoGen FID 11.21
+  6. 结转·K9-Bench 907 vs 923口径 — **完成** — arXiv HTML 2607.02680v1（§3.1＋附录表6/7） — 阶段口径闭合：总挖掘池1,737（＝1,129＋608）→923（498人工＋425 Gemini-2.0-flash代理）→8,263 QA→3模型多数投票去偏滤42.58%→4,744 QA/907视频——与R3阶段分列一致，无冲突
+  7. 轮换·按钮线（一般引用）— **完成（无新增）** — OpenAlex `dog button soundboard AAC communication 2026` — 唯一命中Wayenberg框架（已收录）；窗口内无新按钮实验研究
+  8. 轮换·认知／反向训练 — **完成（无相关新增）** — OpenAlex `dog reverse training cue control cognition`／`canine cognition inhibitory control transfer` — 命中均旧文献或不相关
+  9. 轮换·负面结果 — **完成** — 由Martvel入库覆盖（本轮负面结果主命中）；OpenAlex `dog cognition negative result replication failure`无其他相关
+  10. 结转·合成数据跨物种先例（大鼠USV）择值 — **完成（判断）** — 择值＝维持跨物种方法参照、**不升级入库**（非犬、独立真实测试集设计待核）；犬合成实证维持"本轮检索未定位到"
+- 预算顺序自检：必查是否全部完成 **否**（10项中9完成、1项Sounds of Play全文受注册墙阻塞）；读原文方法节／表格的条目数 **2**（K9-Bench §3.1＋附录表6/7口径链；Pawgaze Table 2结果表）；深查 **4**/上限5（Martvel、Pawgaze、InterPet4D、Sounds of Play页面级；不凑满）
+- 入库 **1**/上限6（只设上限，0–2条亦属正常，未凑数）＋存量行升级4处（Sounds of Play／Pawgaze／K9-Bench／InterPet4D）：
+  1. [LVLM零样本犬情绪识别](https://doi.org/10.1038/s41598-025-25199-7)（Martvel等，Scientific Reports 2025-11-21，CC BY 4.0；窗口外补入——负面结果/改变判断条款）— 数字口径：DE网络图4类原始4,000/测试1,000；LRc受控实验（源29犬/248段视频）测试1,000张2类；GPT-4o DE约76.6%、**LRc无一模型>0.6（近随机）**、跨集ΔAcc−0.32～−0.55（McNemar p<0.001）、同数据监督DINO-ViT 89%（正文数字经OA原文页读取，表格未逐项复核）；独立犬数：LRc源29犬、DE未知 — 证据层级：**原文页级** — 为何对本仓库有价值：零样本LVLM犬情绪靠背景捷径、受控标签下去背景近随机的硬负面结果，直接收窄"现成VLM读犬状态"路线，为误报/泛化/标签可靠性问题提供实证
+- 判断变化：①**"现成通用模型理解犬状态"负向证据链成形**——图像情绪（Martvel：去背景近随机＋背景捷径实证）、视频QA（K9-Bench约40%量级、Pawgaze 56–61%）三面合围，与"能力有限、尚未证明家庭应用可靠"一致且加强；同数据监督小模型89%说明缺口在零样本通用模型而非面部信息缺失；②InterPet4D升级为**ECCV 2026正式发表**＋摘要级规模（6.8M帧/13犬/11品种/23人、FID 11.21），资源地图该条可信度上升，任务仍限交互运动生成参照（运动生成成绩≠行为解释精度）；③K9-Bench 907/923**阶段口径闭合**（1,737＝1,129＋608），非冲突；④Pawgaze分数表落地，与K9-Bench任务/难度不同，**不作精度差比较**；⑤主任务核心四问缺口维持——按五档用词为"本轮检索未定位到（OpenAlex/arXiv/S2/HF/WebSearch，2025-06起过滤＋窗口内全查）"，不作"领域不存在"外推。
+- 筛除／存疑：HF窗口内dog/canine条目全筛除（`BangorAI/dogfennau-llyw-cymru-1`＝威尔士语文档翻译、`PeetPedro/ultrawhale-dogfood`＝软件dogfood语义、`alessandro54/dogs-of-the-world-refined`＝品种图像分类、`ladyfareedah/cats-dogs-classification`＝教程级、doge/dogecoin＝加密行情噪声）；`wewewemoxom/Canine-Age-Transition-Vocalization-Dataset`（2026-10-27）与`SreethanSiddharth/Barkopedia-Dog-Vocal-Detection`（2026-10-20）第三方再上传（窗口外，沿例存疑不入库）；SMARTSENSE PET（CSIT 2025-09-20低层级会刊）仅线索不入库。
+- 其他发现（自由填写）：①家庭犬行为连续监测方向存在旧工程文献——2022 Sensors《Multi-level Hierarchical Complex Behavior Monitoring System for Dog Psychological Separation Anxiety》与2023 Sensors《Behavior-Based Video Summarization System for Dog Health and Welfare Monitoring》（本轮仅元数据级命中、全文未读），或部分松动"家庭连续监控研究空白"表述，待精读后判断是否改变主任务缺口口径；②arXiv 2610.14232《Speech event detector》（2026-10-09）时间戳式非言语声音事件检测——人类语音侧方法参照，可借鉴事件区间输出形式；③通道观察：OpenAlex/S2/arXiv今日多轮429（并发即限流），串行＋退避后恢复；SSRN页面可经WebFetch读正文而PDF在注册墙后——**页面级与全文级须分开记**。
+- 未入库但值得跟踪的线索：《Unsupervised Canine Emotion Recognition Using Momentum Contrast》（Sensors 2024-11-16）；SMARTSENSE PET；2022分离焦虑监测系统与2023视频摘要系统（见其他发现）；Sounds of Play PDF全文（换浏览器通道或等Cell Press期刊版）；Pawgaze与K9-Bench视频ID重合度。
+- 深查证据层级自报：**4**/5；本轮新条目整体层级 **原文页级**（1条）＋存量升级混合（表格级／摘要级／原文页级）。
+- 覆盖（逐条；采集段约2026-11-09 10:04–10:20 +09，逐条时刻无独立日志的标未知）：
+  - HF API｜`models/EarthSpeciesProject/NatureLM-audio`、`datasets/pawgaze/pawgaze`＋README、`datasets/ohicarip/interpet4d`＋README、`datasets?search=dog／canine／pet behavior&sort=lastModified`（各返回上限12）｜2026-11-09｜发现（NatureLM复查、Pawgaze许可双查、InterPet4D作者列、HF窗口内0入库）
+  - GitHub｜`earthspecies/NatureLM-audio/commits/main.atom`｜2026-11-09｜发现（窗口内无新提交）
+  - arXiv｜`abs/2607.02680`＋`html/2607.02680v1`（§3.1＋附录表6/7）＋`abs/2607.10287`＋API `all:"InterPet4D"|"InterPetMoGen"`（0命中，与Scholar对照后经作者页定位）｜2026-11-09｜发现（K9口径闭合、InterPet4D摘要）；API曾429×3→退避后成功
+  - OpenAlex｜主任务13查询（`dog activity recognition continuous home video`／`pet camera dog event detection`／`dog behavior monitoring household false positive`／`canine behavior recognition cross-subject generalization`／`dog activity recognition continuous video household`／`pet dog behavior detection false alarm wearable`／`dog vocalization event detection home`／`canine behavior cross-household generalization`（429）等）＋轮换5查询（按钮/认知/反向/负面/简单基线）｜2026-11-09｜发现（主任务窗口内无直接新研究＋2条旧工程文献线索；轮换按钮无新增、认知反向无相关）；429×4→串行退避重试
+  - Semantic Scholar｜`pet dog event detection camera household`（命中均不相关）；`dog bark detection false positive deep learning`／`pet activity recognition smart home camera dog`／`InterPet4D…`等**429访问失败**→OpenAlex/arXiv/WebSearch备用补齐｜2026-11-09｜部分访问失败（备用成功）
+  - WebSearch｜`dog activity recognition continuous video home monitoring automatic event detection 2026`（商业噪音为主）／`"Sounds of Play" …`／`Pawgaze … results`（命中OpenReview PDF）／`"InterPet4D" OR "InterPetMoGen" …`（命中arXivDaily＋Scholar作者页→ECCV 2026落定）／`"Investigating the capabilities…dog emotion recognition" Technion`（命中CRIS＋网易转述）｜2026-11-09｜发现
+  - WebFetch｜SSRN `abstract_id=7612027`（页面✅）＋`Data_Integrity_Notice.cfm?abid=7612027`（**注册墙**）＋nature.com `s41598-025-25199-7`（OA全文页✅）＋NeurIPS `virtual/2025/131537`（Pawgaze摘要✅）＋Technion CRIS页（✅）｜2026-11-09｜发现
+  - OpenReview｜v1 `notes/search?query=Pawgaze`（空）、api2（400）→经WebSearch命中`openreview.net/attachment?id=6DxxI05WSk` PDF直读｜2026-11-09｜备用成功
+  - curl SSRN PDF｜`Delivery.cfm?abid=7612027`＋`Data_Integrity_Notice.cfm`｜2026-11-09｜**访问失败（403/Cloudflare＋注册墙）**
+- 未完成与下轮承诺（2026-11-16）：①**Sounds of Play全文**（唯一欠账；SSRN注册墙——换浏览器通道或等Cell Press期刊版；样本量/与17犬关系仍未知）；②主任务核心四问续（连续自动触发/事件区间/注册负担/跨家庭维持重点；2022/2023家庭监测两篇择值精读）；③Salford维持低频观察（预设条款，不再每周挂账）；④Sci Data 17犬描述论文发表随查；⑤合成数据维持方法参照，出现犬实证即改判；⑥窗口起点维持**2026-10-31**补扫。
+
 ## 2026-11-02 · GPT 评审纠错落地（R3–R6／R9，非定时扫描）
 
 - 性质：GPT 本期评审列 R3–R6 纠正；军师逐条**直读原文复核**（K9-Bench arXiv 2607.02680v1 §3.1–3.4 与结果表、Pawgaze NeurIPS 页作者对照、InterPet4D arXiv 2607.10287v1 §3.3／§6.1）后落地。历史周记不回改，被本节取代的口径不得继续引用。
