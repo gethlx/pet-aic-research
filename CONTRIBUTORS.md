@@ -21,6 +21,7 @@
 | 军师 | WorkBuddy，本机 Mac | `WorkBuddy 军师` | `workbuddy-junshi@users.noreply.github.com` | `Agent: workbuddy-junshi` | `> 提交者：军师（WorkBuddy，本机）` |
 | 老邪 | Grok bot，云端 | `老邪 (Grok)` | `laoxie-grok@users.noreply.github.com` | `Agent: grok-laoxie` | `> 提交者：老邪（Grok bot，云端）` |
 | GPT | Codex，云端 | `GPT (Codex)` | `gpt-codex@users.noreply.github.com` | `Agent: gpt-codex` | `> 提交者：GPT（Codex，云端）` |
+| 产品专家 | Grok bot，云端（分支前缀 `chanpin/`，只写 `docs/方向调研/` 下本人文件及对应账本条目） | `产品专家 (Grok)` | `chanpin-grok@users.noreply.github.com` | `Agent: grok-chanpin` | `> 提交者：产品专家（Grok bot，云端）` |
 | 晶晶 | 人，本机 Mac（**＝主公本人，仓库所有者**） | `gethlx` | （保持现有设置） | `Agent: human-jingjing` | `> 提交者：晶晶` |
 
 邮箱使用 `@users.noreply.github.com` 仅作**标签**，不指向真实账号、不会关联 GitHub 个人页；若你已有惯用邮箱，可换用，但必须与名册一致且不与 `gethlx` 混淆。
