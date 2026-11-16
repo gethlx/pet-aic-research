@@ -4,6 +4,38 @@
 
 ---
 
+## 2026-11-16 · AIC 学术工程侧每周扫描第八次运行（定时任务）
+
+- 运行：开始 **2026-11-16T10:08:41+0900**（任务触发时间戳）；写入开始 **2026-11-16T10:23:31+0900**（.weekly-write.lock/owner.txt 创建时刻，date实测）；Git 提交时间戳 **待回填（本条经补笔更新）**。
+- 采集窗口：**2026-10-31～2026-11-16 10:08**（自上轮完整成功扫描 2026-11-02 10:11 回溯 2 天；11-09 部分完成未推水位，起点维持补扫）；成功水位：**不推进（部分完成）**——结转项 Sounds of Play 全文连续第二周受阻（本轮 SSRN 页降为 JS 壳＋PDF 注册墙），按"部分扫描不推进水位"，下轮窗口起点维持 **2026-10-31**。
+- 轮换主题：**隔周专题试行 11-16 轮「对齐问题和证据」**（月度轮换本月第二周主题被专题取代，顺延不挂账）；上轮结转补查：Sounds of Play 全文、主任务四问续＋2022/2023 两篇择值精读、Sci Data 17 犬描述论文发表随查。
+- 必查项（逐项，禁止先写"全部完成"再列失败）：
+  1. NatureLM repo＋权重卡（每周必查）— **完成** — HF API `models/EarthSpeciesProject/NatureLM-audio`＋`github.com/earthspecies/NatureLM-audio/commits/main.atom` — 权重卡无变化（lastModified 2025-09-09、cc-by-nc-sa-4.0、下载 1682）；main 窗口内无新提交（最新 #20 v1.1.0 系 2026-11-01，上轮已定性纯版本号跳变）
+  2. 本期主任务：Martvel 引用归属纠错确认＋Atif（PMC10054391）／Wang（PMC8879953）方法卡拆解＋参考文献追溯 — **完成** — Martvel 11-10 纠错在位（papers 行转引/本文分列，无需再改）；方法卡六字段（录制时长/设备/事件区间/分组/误报分母/外部验证）逐项直读 PMC 全文落入 papers 两行；引用追溯命中海外同类可观察事件研究 2 篇入库（Stephan 2021、Protopopova 2016）＋Fux 系线索
+  3. 结转·Sounds of Play 全文（样本量、与 17 犬关系）— **访问失败**（连续第二周） — SSRN `abstract_id=7612027` 本轮返回 5.6KB JS 壳（11-09 WebFetch 曾得完整页）、PDF Delivery 通道维持注册墙 — 备用入口本轮降级；按规则不注册绕过；样本量/与 17 犬关系仍未知
+  4. 结转·Sci Data 17 犬描述论文发表随查 — **完成（仍未正式发表）** — bioRxiv API `details/10.64898/2026.04.20.719471`（published=NA）＋Europe PMC DOI 查询（无期刊条目）＋OpenAlex `Sounds of Play/annotated dataset` 检索 — 预印本维持（30 场/17 犬，2026-04-23），正式发表仍未定位，datasets 行已注日期
+  5. 主任务四问续（连续自动触发/事件区间/注册负担/跨家庭）— **完成（缺口维持，方法卡逐字段覆盖）** — Wang/Atif 方法卡显示两篇均无每小时误报分母、无按犬隔离分组、无跨家庭验证；引用追溯未命中填补四问的新研究
+- 预算顺序自检：必查是否全部完成 **否**（5 项中 4 完成、1 项 Sounds of Play 全文访问失败）；读原文方法节／表格的条目数 **2**（Wang 表 1/6/7/8/10/12＋Atif 表 3/4/6/7 全文直读，达到目标 1–2）；深查 **4**/上限5（Wang、Atif 方法节级；Stephan、Protopopova 摘要级；不凑满）
+- 入库 **4**/上限6（只设上限，0–2 条亦属正常，未凑数）：
+  1. [犬分离焦虑症状多级监测系统（Wang等）](https://doi.org/10.3390/s22041556)（Sensors 2022-02-17，CC BY；窗口外补入——11-16 专题指定方法卡对象）— 数字口径：8 犬（独立个体 8）/5–15min 场次；L3 Destructive 48.5min/Exploratory 72.3min/Vocalization 25min；L1 4,500 样本、L2 1,070＋窗增强、L3 467＋增强；L3 avg F1 0.863（样本级 5 折 8:2，未按犬隔离）；事件窗 L3 15s/Fuzzy-CEP 阈值 1.0/1.5 — 证据层级：**方法节级** — 为何有价值：家庭独处 SA 症状三层事件规则＋穿戴先例，方法卡直接回答"事件区间怎么定、误报怎么算"并暴露时长分母缺失
+  2. [犬行为视频摘要健康监测系统（Atif等）](https://doi.org/10.3390/s23062892)（Sensors 2023-03-07，CC BY；窗口外补入——11-16 专题指定方法卡对象）— 数字口径：2 犬（独立个体 2）；检测 43,000 帧、行为 9,396 个 8 帧序列（12 类 363–1,000/类）；单次录制上限 20–30min、总时长未报告；avg F1 0.955（7:2:1 随机序列切分，未按犬隔离）；推理 0.226s/图 — 证据层级：**方法节级** — 为何有价值：顶置摄像机连续视频管线＋摘要交互，与 Wang 构成同团队家庭监测工程对照；暴露 2 犬实验室 F1 与家庭可用性的鸿沟
+  3. [家庭独处犬视频行为研究（Stephan等）](https://doi.org/10.1016/j.applanim.2021.105463)（AABS 2021-09-27，hybrid OA；窗口外补入——引用追溯命中）— 数字口径：**77 犬真实家庭**（32 单犬户＋45 多犬户，独立个体 77）；活动 15.3±14.3 vs 27.5±26.1（均值±SD）；互动 0.24±0.6；连续取样位置/姿势/发声 — 证据层级：**摘要级**（全文未逐段读） — 为何有价值：海外家庭独处基率——"低发声低活动是常态"，为误报分母含无事件时段提供实证依据
+  4. [家庭独处吠叫自动检测＋远程食丸强化（Protopopova等）](https://doi.org/10.1002/jaba.334)（JABA 2016-07-11，closed；窗口外补入——引用追溯命中）— 数字口径：5 犬（独立个体 5）、ABAB 反转、3/5 吠叫下降、DRO 渐进稀释；检测实现/误报口径未知（全文未读） — 证据层级：**摘要级** — 为何有价值：自动吠声检测＋干预闭环的行为分析学先例，直接对准"连续自动触发"缺口
+- 判断变化：①**"家庭连续监控研究空白"收窄为"缺四问全覆盖"**——已有海外 77 犬家庭独处基率（Stephan 2021）、韩 8 犬穿戴事件规则（Wang 2022）、2 犬实验室视频摘要（Atif 2023）与自动吠声干预先例（Protopopova 2016），但核心四问（连续自动触发/事件区间误报时长分母/注册负担/跨家庭验证）仍无人全部覆盖，不作"领域无研究"外推；②**方法卡反证评估口径 v0 修正的必要性**——Wang/Atif 误报口径均为分类样本级 P/R/F1，无每小时误报、无含无事件时段的总时长分母、无按犬/家庭隔离，与 v0 修正（一对一匹配＋时长分母＋同家庭/未见家庭分列）正好互补；③Wang 三层事件规则（L2 观察窗 2s/1s、L3 15s 窗＋Fuzzy-CEP 阈值）是事件区间操作化首个可借鉴工程先例；④Sci Data/17 犬维持"bioRxiv 预印本＋托管页自述在审、正式发表未定位"两分列（11-16 随查无变化）；⑤Martvel 引用归属纠错（11-10）确认在位，无反复。
+- 筛除／存疑：Fux 系两篇（Animals 2019 9(12):1140 运动模式计算分析、2021 11:2806 视频 ADHD 样评估，均 gold OA）——相关但非家庭独处事件谱系，降为线索不入库；《Tailoring Interactions》（CHI EA 2023，远端交互时机）背景不入库；《Developing Diagnostic Frameworks…Separation Related》（Front Vet Sci 2020）诊断综述背景不入库；Palestrini 2010/Scaglia 2013 经典仅经引用与元数据确认，未深查、不入库不升格。
+- 其他发现（自由填写）：①bioRxiv 新 DOI 前缀 10.64898 与 Europe PMC 双通道查证预印本状态稳定可用，SSRN 反而降级为 JS 壳（与 11-09 WebFetch 全页不同——同一入口不同通道稳定性差异大，页面级/全文级/壳级须分记）；②OpenAlex 429 依旧多发，串行＋退避有效；③Wang/Atif 两篇 Data Availability 分别"Not applicable"与未见声明——韩国团队这批工程文献代码/数据均不公开，复现只能重建管线；④Stephan 2021 恰好给出"无事件时段占比高"的自然基率，与市场侧 11-16"每天叫≤3 次"个案相互印证，误报分母设计有跨侧证据。
+- 未入库但值得跟踪的线索：Fux 系 2019/2021（gold OA 可随时取全文）；Stephan 2021 PDF 全文细读（多犬户分数据表）；Protopopova 2016 全文（检测实现与误报口径，需馆际或机构通道）；Scaglia 2013《Video analysis of adult dogs when left home alone》原始经典（被 Stephan 系引用谱系）。
+- 深查证据层级自报：**4**/5；本轮新条目整体层级 **混合（2 条方法节级、2 条摘要级）**。
+- 覆盖（逐条；采集段 2026-11-16 10:08–10:23 +09 可验证窗口，逐条时刻无独立日志的标未知）：
+  - HF API｜`models/EarthSpeciesProject/NatureLM-audio`（返回上限 1）｜2026-11-16｜发现（权重卡无变化）
+  - GitHub｜`earthspecies/NatureLM-audio/commits/main.atom`（11 条）｜2026-11-16｜发现（窗口内无新提交）
+  - PMC｜`PMC8879953`＋`PMC10054391` 全文 HTML 直抓｜2026-11-16｜发现（两篇方法卡六字段逐项直读）
+  - OpenAlex｜引用追溯 4 查询（`…bark collar automated differential reinforcement…`／`Objective Video-Based Assessment ADHD-Like Canine`／`Video analysis of adult dogs when left home alone`／`Video analysis of dogs with separation-related behaviors`）＋`dog play pant behavior vocal`（per-page 5）＋`annotated bioacoustic dataset dog vocalizations dog-human interaction`（per-page 2）＋`Sounds of Play dog game vocal`（per-page 4）｜2026-11-16｜发现（Stephan 2021、Protopopova 2016、Fux 系、Palestrini 2010 元数据；Sci Data 无期刊条目）；429×2→串行退避重试成功
+  - bioRxiv API＋Europe PMC｜`details/biorxiv/10.64898/2026.04.20.719471`＋`query=DOI:10.64898/2026.04.20.719471`｜2026-11-16｜发现（30 场/17 犬/两层标注/跨个体置换分类；published=NA）
+  - crossref｜`10.64898/2026.04.20.719471`｜2026-11-16｜发现（posted-content 元数据，作者 8 人＋Huber/Lamm）
+  - SSRN｜`papers.ssrn.com/sol3/papers.cfm?abstract_id=7612027`｜2026-11-16｜**访问失败（5.6KB JS 壳，样本量未取得）**；PDF Delivery 通道维持注册墙不绕过
+- 未完成与下轮承诺（2026-11-30 专题轮）：①Sounds of Play 全文——11-30 前试 Cell Press 期刊版或浏览器通道一次，**若仍不可得即降为低频随期刊版跟踪，不再列为每轮必查挂账**（明确缩减承诺），样本量/与 17 犬关系维持未知；②11-30 专题「追验证与反例」：按[评估方案 v0](../docs/方向调研/架构师-家庭连续事件检测评估方案v0.md)对照三类方法（运动／声量阈值、检测追踪＋位移、冻结音频特征＋线性分类）交付文献与工件对照（指标、数据、权利条件），发现跨家庭研究优先精读切分与误报口径；③核心四问续（注册负担仍无任何研究触及）；④窗口起点维持 **2026-10-31** 补扫；⑤Salford 维持低频观察、合成数据维持方法参照（预设条款不重复挂账）。
+
 ## 2026-11-10 · GPT 评审纠错落地＋隔周专题采纳（非定时扫描）
 
 - 性质：同日市场侧纠错节的姊妹篇；军师独立复核 Martvel 原文（nature.com s41598-025-25199-7 全文页）后落地。
